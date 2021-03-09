@@ -8,6 +8,10 @@ use App\Models\Category;
 use App\Models\Portfolio;
 use App\Models\TeamMember;
 use App\Models\Contact;
+use App\User;
+use App\Models\StudentCourse;
+use App\Models\StudentInfo;
+use Illuminate\Support\Facades\Hash;
 
 class PagesController extends Controller
 {
@@ -28,6 +32,113 @@ class PagesController extends Controller
     public function about_us()
     {
         return view('frontend.pages.index');
+    }
+
+    public function student_apply(Request $request)
+    {
+
+
+        return $request;
+
+        $this->validate($request, [
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'father_name' => 'required',
+            'mother_name' => 'required',
+            'present_address' => 'required',
+            'permanent_address' => 'required',
+            'occupation' => 'required',
+            'dob' => 'required',
+            'country' => 'required',
+            'gender' => 'required',
+            'religion' => 'required',
+            'marital_status' => 'required',
+            'district' => 'required',
+            'thana' => 'required',
+            'zip_code' => 'required',
+            'guardian_number' => 'required',
+            'relationship' => 'required',
+        ]);
+
+
+        $user = new user();
+        $user->role_id = 2;
+        $user->username = $request->username;
+        $user->name = $request->name;
+        $user->phone = $request->phone;
+        $user->email = $request->email;
+        // $user->photo = $request->photo;
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        $StudentCourse = new StudentCourse();
+        $StudentCourse->user_id = $user->id;
+        $StudentCourse->course_id = $request->course_id;
+        $StudentCourse->reference_name = $request->reference_name;
+        $StudentCourse->reference_id = $request->reference_id;
+        $StudentCourse->reference_mobile = $request->reference_mobile;
+        $StudentCourse->save();
+
+        $StudentInfo = new StudentInfo();
+        $StudentInfo->user_id = $user->user_id;
+        $StudentInfo->father_name = $request->father_name;
+        $StudentInfo->mother_name = $request->mother_name;
+        $StudentInfo->present_address = $request->present_address;
+        $StudentInfo->permanent_address = $request->permanent_address;
+        $StudentInfo->office_address = $request->office_address;
+        $StudentInfo->nid = $request->nid;
+        $StudentInfo->occupation = $request->occupation;
+        $StudentInfo->dob = $request->dob;
+        $StudentInfo->country = $request->country;
+        $StudentInfo->blood_group = $request->blood_group;
+        $StudentInfo->gender = $request->gender;
+        $StudentInfo->religion = $request->religion;
+        $StudentInfo->marital_status = $request->marital_status;
+        $StudentInfo->district = $request->district;
+        $StudentInfo->thana = $request->thana;
+        $StudentInfo->zip_code = $request->zip_code;
+        $StudentInfo->guardian_number = $request->guardian_number;
+        $StudentInfo->relationship = $request->relationship;
+
+
+        $ssc_arr = array(
+            "institute" => $request->institute1,
+            "board" => $request->board,
+            "passing_year" => $request->passing_year,
+            "result" => $request->board
+        );        
+        $StudentInfo->ssc = json_encode($ssc_arr);
+
+        $hsc_diploma_arr = array(
+            "institute" => $request->institute1,
+            "board" => $request->board,
+            "passing_year" => $request->passing_year,
+            "result" => $request->board
+        );        
+        $StudentInfo->hsc_diploma = json_encode($hsc_diploma_arr);
+
+        $graduation_arr = array(
+            "institute" => $request->institute1,
+            "board" => $request->board,
+            "passing_year" => $request->passing_year,
+            "result" => $request->board
+        );        
+        $StudentInfo->graduation = json_encode($graduation_arr);
+
+        $post_graduation_arr = array(
+            "institute" => $request->institute1,
+            "board" => $request->board,
+            "passing_year" => $request->passing_year,
+            "result" => $request->board
+        );        
+        $StudentInfo->post_graduation = json_encode($post_graduation_arr);
+
+
+        $StudentInfo->status = 1;
+        $StudentInfo->save();
+
+        return back()->with('success', 'Your Registration Submit Successfully.');
     }
 
     

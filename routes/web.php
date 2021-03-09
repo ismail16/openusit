@@ -6,6 +6,7 @@ Route::get('/', 'Frontend\PagesController@index')->name('index');
 Route::get('/about-us', 'Frontend\PagesController@about_us')->name('about_us');
 Route::get('/admin/login', 'Frontend\PagesController@login')->name('admin.login');
 Route::post('/contact-post', 'Frontend\PagesController@contact_post')->name('contact_post');
+Route::post('/student-apply', 'Frontend\PagesController@student_apply')->name('student_apply');
 
 
 

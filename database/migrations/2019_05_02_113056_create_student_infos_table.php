@@ -14,25 +14,30 @@ class CreateStudentInfosTable extends Migration
     public function up()
     {
         Schema::create('student_infos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->integer('user_id');
-            $table->string('father');
-            $table->string('mother');
+            $table->string('father_name');
+            $table->string('mother_name');
+            $table->string('present_address');
+            $table->string('permanent_address');
+            $table->string('office_address')->nullable();
+            $table->string('nid')->nullable();
+            $table->string('occupation');
             $table->string('dob');
+            $table->string('country');
+            $table->string('blood_group')->nullable();
             $table->string('gender');
             $table->string('religion');
-            $table->string('marital');
-            $table->string('last_education');
-            $table->string('subject');
-            $table->string('result');
-            $table->string('pre_address');
-            $table->string('pre_upz');
-            $table->string('pre_dist');
-            $table->string('pre_post');
-            $table->string('per_address');
-            $table->string('per_upz');
-            $table->string('per_dist');
-            $table->string('per_post');
+            $table->string('marital_status');
+            $table->string('district');
+            $table->string('thana');
+            $table->string('zip_code');
+            $table->string('guardian_number');
+            $table->string('relationship');
+            $table->text('ssc')->nullable();
+            $table->text('hsc_diploma')->nullable();
+            $table->text('graduation')->nullable();
+            $table->text('post_graduation')->nullable();
             $table->boolean('status')->default(0);
             $table->timestamps();
         });
