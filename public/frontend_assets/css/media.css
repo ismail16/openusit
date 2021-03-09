@@ -1,0 +1,2146 @@
+@media (min-width:1200px) {
+    .megamenu{
+        width: 1380px;
+    }
+}
+/*========================= Home Page =========================*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-nav .nav-item {
+        padding: 0 5px;
+    }
+    .navbar-nav .nav-item .nav-link {
+      font-size: 17px;
+    }
+    .xtra8 {
+        padding-left: 0;
+    }
+    .contact-no ul li p {
+        font-size: 14px;
+    }
+    .news-title p {
+        background: red;
+    }
+    .news-title {
+        left: 0px;
+        width: 130px;
+        text-align: center;
+    }
+    .news-title {
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 38px;
+    }
+    .banner-text h2 {
+        font-size: 38px;
+    }
+    .banner-text {
+        padding-top: 80px;
+        padding-bottom: 170px;
+    }
+    .achive-item p {
+        font-size: 18px;
+    }
+    #course {
+        padding-top: 100px;
+    }
+    .tabs li {
+        height: 106px;
+        width: 105px;
+        padding: 10px 0;
+    }
+    .tabs .nav-pills a{
+        font-size: 12px;
+    }
+    .gd-left {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .gd-left h3 {
+        padding-bottom: 5px;
+    }
+    .gd-left p {
+        line-height: 22px;
+    }
+    .seat {
+        margin-top: 40px;
+    }
+    #facilities {
+        padding-top: 70px;
+    }
+    #other-achive {
+        padding-top: 70px;
+    }
+    #preview {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .preview-details p {
+        line-height: 26px;
+        padding-top: 0px;
+        padding-bottom: 12px;
+    }
+    .xtra4 {
+        position: absolute;
+        left: 10px;
+        bottom: -100px;
+    }
+    #leader {
+        padding-top: 60px;
+    }
+    #partners {
+        padding-top: 60px;
+    }
+    #concern {
+        padding-bottom: 50px;
+    }
+    .leader-speach {
+        padding: 0px;
+    }
+    .leader-speach p {
+        line-height: 24px;
+        padding-right: 15px;
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .arrows2 {
+        bottom: 3px;
+    }
+    .contact h3 {
+        font-size: 18px;
+    }
+    .contact ul li a {
+        font-size: 13px;
+    }
+    .phone p {
+        font-size: 13px;
+    }
+    .email p {
+        font-size: 13px;
+        line-height: 40px
+    }
+    .contact span {
+        font-size: 13px;
+    }
+    .contact i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .social i {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        margin: 0 0px;
+    }
+    .footer-logo h4 {
+        padding-top: 28px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+    /*===================== megamenu start here =============================*/
+    .megamenu{
+        left: 0;
+    }
+    .megamenu .mega-border{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .megamenu .mega-item h4{
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 12px;
+    }
+    .megamenu .mega-item ul{
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+    .megamenu .mega-item ul li a{
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .megamenu .mega-item ul li a{
+        padding-left: 18px;
+    }
+    .megamenu .mega-item ul li a:after{
+        width: 8px;
+        height: 8px;
+    }
+    .megamenu .mega-item ul li a:hover::after{
+        left: 5px;
+    }
+    .navbar-expand-md .navbar-nav .nav-item .btn2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    /* megamenu ends here */
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #achivement {
+    position: static!important;
+  }
+  .welcome-head {
+    padding-top: 50px;
+  }
+    .news-title-mblie {
+        background: red;
+        line-height: 40px;
+        color: #fff;
+        font-family: 'Arimo', sans-serif!important;
+        font-size: 16px;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    .banner-text {
+        padding-top: 70px;
+        padding-bottom: 140px;
+    }
+    .achive-item {
+        border-right:none;
+    }
+    .counseling-img {
+        padding-top: 50px;
+    }
+    #course {
+        padding-top: 100px;
+    }
+    .tabs li {
+        height: 130px;
+        width: 160px;
+    }
+    .gd-left {
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    .gd-left h3 {
+        padding-bottom: 5px;
+    }
+    .gd-left p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .gd-right img {
+        height: 280px;
+    }
+    .seat {
+        line-height: 36px;
+        margin-top: 12px;
+    }
+    .tab-content {
+        margin-top: 30px;
+    }
+    #upcoming-seminar {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+    #facilities {
+        padding-top: 70px;
+    }
+    #other-achive {
+        padding-top: 70px;
+    }
+    #preview {
+        padding-top: 80px;
+    }
+    .xtra4 {
+        position: static;
+        transform: none;
+        width: 161px;
+        height: 205px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    #preview {
+        padding-bottom: 40px;
+    }
+    #leader {
+        padding-top: 60px;
+    }
+    .leader-speach {
+        padding: 20px 20px 50px 0;
+    }
+    .leader-speach p {
+        line-height: 28px;
+    }
+    .leader-img {
+        padding-left: 15px;
+    }
+    .arrows2 {
+        bottom: 22px;
+        left: 47%;
+        transform: translateX(-47%);
+    }
+    #partners {
+        padding-top: 50px;
+    }
+    #concern {
+        padding-bottom: 50px;
+    }
+    .contact2 {
+        padding-left: 0;
+    }
+    /* megamenu start here */
+    .navbar-nav .nav-item{
+        padding: 0 7px;
+    }
+    .megamenu2 .mega-item ul li a {
+        font-size: 15px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .contact-no ul li i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .contact-no {
+        padding: 40px 0 0 0;
+    }
+    .contact-no ul li p {
+        font-size: 15px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left:0;
+    }
+    .navbar-expand-md .navbar-nav .nav-item .btn2 {
+        padding-left: 8px!important;
+        padding-right:8px;
+    }
+    .megamenu{
+        left: 0;
+    }
+    .megamenu .mega-border{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .megamenu .mega-item h4{
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .megamenu .mega-item ul li a{
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    .megamenu .mega-item ul li a::after{
+        width: 8px;
+        height: 8px;
+    }
+    .megamenu .mega-item ul{
+        padding-bottom: 15px;
+        padding-top: 10px;
+    }
+    /* megamenu ends here */
+
+
+
+
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #achivement {
+    position: static!important;
+  }
+  #all-members {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .welcome-head {
+    padding-top: 30px;
+  }
+    .news-title-mblie {
+        background: red;
+        line-height: 40px;
+        color: #fff;
+        font-family: 'Arimo', sans-serif!important;
+        font-size: 16px;
+    }
+    .xtra12{
+      padding-left: 15px;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    .mobile-mega-menu {
+        line-height: 60px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        padding-left: 15px;
+        line-height: 50px;
+    }
+    #accordion {
+        padding-left: 15px;
+    }
+    .navbar-nav .nav-item {
+        padding: 0 0;
+        /*        padding-left: 15px;*/
+    }
+    .navbar-expand-md .navbar-nav .nav-item .btn2 {
+        text-align: center;
+        line-height: 40px;
+    }
+    .navbar-nav {
+        background: #eee;
+        box-shadow: 0px 10px 20px rgba(221, 221, 221, 0.59);
+        margin: 15px 0;
+    }
+    .navigation-wrap {
+        padding: 5px 0;
+    }
+    .banner-text {
+        padding-top: 40px;
+        padding-bottom: 130px;
+    }
+    .banner-text h1 {
+        font-size: 36px;
+    }
+    .banner-text h2 {
+        font-size: 36px;
+    }
+    .banner-text a {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    #course {
+        padding-top: 100px;
+    }
+    .counseling-img {
+        padding-top: 30px;
+    }
+    .achive-item {
+        border-right:none;
+    }
+    .tabs li {
+        width: 33.3%;
+    }
+    .tab-content {
+        margin-top: 30px;
+    }
+    .gd-left {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #upcoming-seminar {
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  .seminarform-head {
+    padding-bottom: 0;
+  }
+    #facilities {
+        padding-top: 70px;
+    }
+    #other-achive {
+        padding-top: 70px;
+    }
+    #preview {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    .xtra4 {
+        position: static;
+        transform: none;
+        width: 161px;
+        height: 205px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .arrow {
+        padding-top: 60px;
+    }
+    .preview-details {
+        text-align: center;
+    }
+    .preview-details p {
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    .arrow {
+        padding-top: 60px;
+        display: none;
+    }
+    #leader {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .leader-speach p {
+        padding: 0 15px;
+    }
+    .leader-speach h4 {
+        padding:0 15px;
+    }
+    .leader-img {
+        padding-top: 30px;
+    }
+    .arrows2 {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 15px;
+    }
+    .leader-slider {
+        padding-bottom: 30px;
+    }
+    #partners {
+        padding-top: 50px;
+    }
+    #concern {
+        padding-bottom: 50px;
+    }
+    .footer-logo {
+        padding-bottom: 40px;
+    }
+    .xtra5 {
+        padding-top: 0px;
+    }
+    /* megamenu start here */
+    .megamenu{
+        left: 0;
+        display: none;
+    }
+    /* megamenu ends here */
+
+}
+
+@media (max-width: 575.98px) {
+  #all-members .partners {
+    margin-top: 10px;
+  }
+  #all-members {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #upcoming-seminar .table tr td{
+    font-size: 14px;
+  }
+  #achivement {
+    position: static!important;
+  }
+  .welcome-head {
+    padding-top: 30px;
+  }
+    .news-title-mblie {
+        background: red;
+        line-height: 40px;
+        color: #fff;
+        font-family: 'Arimo', sans-serif!important;
+        font-size: 16px;
+    }
+    .mobile-mega-menu {
+        line-height: 60px;
+    }
+    .xtra12{
+      padding-left: 15px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        padding-left: 15px;
+        line-height: 50px;
+    }
+    #accordion {
+        padding-left: 15px;
+    }
+    .navbar-nav .nav-item {
+        padding: 0 0;
+        /*        padding-left: 15px;*/
+    }
+    #all-members .nav-tabs .nav-link {
+        width: 100%;
+    }
+    .navbar-expand-md .navbar-nav .nav-item .btn2 {
+        text-align: center;
+        line-height: 40px;
+        padding-left: 0;
+    }
+    .navbar-nav {
+        background: #eee;
+        box-shadow: 0px 10px 20px rgba(221, 221, 221, 0.59);
+        margin: 15px 0;
+    }
+    .navigation-wrap {
+        padding: 5px 0;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    .banner-text {
+        padding-top: 40px;
+        padding-bottom: 130px;
+    }
+    .banner-text h1 {
+        font-size: 32px;
+        line-height: 48px;
+        color: #fff;
+    }
+    .banner-text h2 {
+        font-size: 32px;
+        line-height: 48px;
+        color: #fff;
+    }
+    .banner-text p {
+        line-height: 32px;
+        color: #fff;
+    }
+    .banner-text a {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+    /* .banner-item:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(12, 12, 12, 0.6);
+    } */
+    .xtra {
+        position: relative;
+        z-index: 999999;
+    }
+    #counseling {
+        padding-top: 0px;
+    }
+    .counseling-img {
+        padding-top: 30px;
+    }
+    #course {
+        padding-top: 90px;
+    }
+    .tabs li {
+        height: 119px;
+        width: 33.33%;
+    }
+    .gd-left {
+        padding: 0 15px 0 15px;
+        padding-top: 20px;
+    }
+    .tab-content {
+        margin-top: 38px;
+    }
+    .gd-left h3 {
+        padding-bottom: 10px;
+    }
+    .gd-right {
+        padding-top: 20px;
+    }
+    #upcoming-seminar {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+  }
+  .seminarform-head {
+    padding-bottom: 0;
+  }
+    #facilities {
+        padding-top: 80px;
+    }
+    #other-achive {
+        padding-top: 50px;
+    }
+    #preview {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .xtra4 {
+        position: static;
+        transform: none;
+        width: 161px;
+        height: 205px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .arrow {
+        padding-top: 60px;
+        display: none;
+    }
+    .preview-details {
+        text-align: center;
+    }
+    .preview-details p {
+        text-align: left;
+        padding-bottom: 30px;
+    }
+    #leader {
+        padding-top: 50px;
+    }
+    .leader-speach {
+        padding: 20px 20px 20px 20px;
+    }
+    .arrows2 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #partners {
+        padding-top: 50px;
+    }
+    #concern {
+        padding-bottom: 60px;
+    }
+    .footer-logo {
+        padding-bottom: 50px;
+    }
+    .contact2 {
+        padding-left: 0px;
+    }
+    .phone {
+        padding-top: 10px;
+    }
+    .xtra5 {
+        padding-top: 0px;
+        line-height: 70px;
+    }
+    .phone p {
+        padding-left: 15px;
+    }
+    .xtra6 {
+        padding-left: 15px!important;
+    }
+    .email {
+        padding-left: 15px;
+    }
+    .footerbtm p {
+        line-height: 24px;
+        padding: 10px 0;
+    }
+    .phone {
+        padding-top: 0px;
+    }
+    .leader-speach h4 {
+        padding-bottom: 30px;
+    }
+    .xtra7 {
+        display: none;;
+    }
+}
+
+/*========================= About Page Page =========================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #about .nav-pills {
+        bottom: -150px;
+    }
+    .mission-details p {
+        font-size: 16px;
+    }
+    .mission-details p {
+        margin-bottom: 0;
+    }
+    #about {
+        padding-top: 50px;
+        padding-bottom: 130px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #breadcrumb {
+        padding: 20px 0;
+    }
+    .mission-img {
+        padding-top: 50px;
+    }
+    #about .about-overview {
+      padding-bottom: 0px;
+      padding-top: 50px;
+    }
+    .mission-details p {
+        padding-top: 10px;
+    }
+    #about .nav-pills {
+        position: static;
+    }
+    .mission-details p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    #about {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    #about .nav-pills li p {
+      font-size: 20px;
+    }
+    .xtra23 {
+      margin-top: -100px;
+    }
+    .mission-head h3 {
+        font-size: 24px;
+    }
+    #others {
+        padding-top: 30px;
+    }
+    .mission-head {
+        padding-top: 50px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #breadcrumb {
+        padding: 15px 0;
+    }
+    .bread a {
+        font-size: 16px;
+    }
+    #about .about-overview {
+      padding-bottom: 0px;
+      padding-top: 50px;
+    }
+    .bread h4 {
+        font-size: 28px;
+    }
+    #about {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    #about .nav-pills {
+        position: static;
+    }
+    #all-members .nav-tabs .nav-link {
+        width: 100%;
+    }
+    #all-members .partners {
+      margin-top: 10px;
+    }
+    #about .nav-pills li p {
+        font-size: 20px;
+    }
+    #about .nav-pills li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #gallery .nav-tabs {
+        width: 100% !important;
+      }
+    .xtra23 {
+      margin-top: -10px;
+    }
+    .mission-details {
+        padding-bottom: 30px;
+    }
+    #others {
+        padding-top: 0px;
+    }
+    .training {
+        padding-top: 0px;
+    }
+    .capcity-details .col-lg-1{
+        text-align: right;
+    }
+    .mission-head h3 {
+        font-size: 30px;
+        margin-left: 39px;
+    }
+    .xtra22 h3 {
+        margin-left: 0px;
+    }
+    .xtra9 p {
+        padding-left: 39px;
+    }
+    .capaciy {
+        padding-top: 30px;
+    }
+}
+@media (max-width: 575.98px) {
+    #breadcrumb {
+        padding: 15px 0;
+    }
+    #procedure #breadcrumb {
+        padding-bottom: 50px;
+    }
+    .bread a {
+        font-size: 16px;
+    }
+    #about .about-overview {
+      padding-bottom: 0px;
+      padding-top: 50px;
+    }
+    .xtra23 {
+      margin-top: -10px;
+    }
+    #gallery .nav-tabs .nav-link {
+        padding: 15px 28px;
+        text-align: center;
+        font-size: 15px;
+        width: 50%;
+    }
+    #gallery-tabs {
+        padding-top: 50px;
+    }
+    .gallery-item-part {
+        padding-top: 10px;
+    }
+    .gallery-head {
+        padding-top: 25px;
+    }
+    #gallery .nav-tabs {
+        width: 100% !important;
+      }
+    .bread p {
+        margin-bottom: 0;
+    }
+    .bread h4 {
+        font-size: 28px;
+    }
+    #about {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    #about .nav-pills li {
+        width: 50%;
+        border-bottom: 1px solid #f1f1f1;
+        border-right: none;
+    }
+    #about .nav-pills {
+        padding: 0 15px;
+        position: static;
+    }
+    .capaciy {
+        padding-top: 30px;
+    }
+    .mission-img {
+        display: none;
+    }
+    .mission-details {
+        padding-bottom: 15px;
+    }
+    #others {
+        padding-top: 0;
+    }
+    .capcity-details .col-lg-1{
+        text-align: right;
+    }
+    .mission-head h3 {
+        font-size: 30px;
+    }
+    .xtra9 p {
+        padding-left: 39px;
+    }
+}
+
+/*========================= Courses Page Page =========================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #all-course .tabs li {
+        width: 33.33%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #all-course .tabs li {
+        height: 135px;
+        width: 33.33%;
+    }
+    #all-members .nav-tabs .nav-link {
+        font-size: 20px;
+        padding: 15px 18px;
+    }
+    #all-course {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    .xtra11 {
+        margin: 0 auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #all-course .tabs li {
+        height: 135px;
+        width: 33.33%;
+    }
+    #all-course {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    #all-course .counseling-form {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #all-course .tabs li {
+        height: 135px;
+        width: 33.33%;
+    }
+    #all-course {
+        padding-top: 50px;
+        padding-bottom: 80px;
+    }
+    #all-course .counseling-form {
+        padding-top: 0;
+    }
+
+}
+
+/*========================= Courses Details Page =========================*/
+@media(min-width:768px) and (max-width:991.99px){
+    .tab-content {
+        margin-top: 0px;
+    }
+    .course-button a {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+@media(min-width:576px) and (max-width:767.99px){
+    .course-button {
+        padding-bottom: 20px;
+    }
+    .course-button a {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+@media(max-width:575px){
+    .course-button a {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+    .career .course-button a {
+        margin-right: 10px;
+    }
+    .course-button {
+        padding-top: 30px;
+    }
+}
+
+/*========================= Facilities Page =========================*/
+@media(min-width:768px) and (max-width:991.99px){
+    #facilities-all {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media(min-width:576px) and (max-width:767.99px){
+    #facilities-all {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+@media(max-width:575px){
+    #facilities-all {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+/*========================= All Preview Page =========================*/
+@media(min-width:992px) and (max-width:1199px){
+    #preview-main .preview-details {
+        text-align: left;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    #preview-main #preview {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #preview-main .preview-item {
+        padding-bottom: 0px;
+        padding-top: 50px;
+    }
+    .preview-details p{
+        padding-bottom: 30px;
+    }
+    #preview-main .preview-details {
+        text-align: center;
+    }
+}
+@media(min-width:576px) and (max-width:767.99px){
+    #preview-main #preview {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #preview-main .preview-item {
+        padding-bottom: 0px;
+        padding-top: 50px;
+    }
+}
+@media(max-width:575px){
+    #preview-main #preview {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #preview-main .preview-item {
+        padding-bottom: 0px;
+        padding-top: 50px;
+    }
+}
+
+/*========================= All Preview Page =========================*/
+@media(min-width:992px) and (max-width:1199px){
+    #gallery .nav-tabs .nav-link {
+        padding: 15px 16px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    #gallery .nav-tabs .nav-link {
+        padding: 15px 26px;
+    }
+    #gallery-tabs {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    #gallery .nav-tabs {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #gallery .nav-tabs .nav-link {
+        padding: 15px 11px;
+        font-size: 15px;
+        width: 25%;
+        text-align: center;
+    }
+    #gallery-tabs {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .gallery-item-part {
+        padding-top: 0px;
+    }
+    .gallery-tab-image h4 {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .gallery-tab-image {
+        margin-bottom: 40px;
+    }
+}
+@media(min-width:381px) and (max-width:575.98px){
+    #gallery .nav-tabs {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #gallery .nav-tabs .nav-link {
+        padding: 15px 12px;
+        font-size: 15px;
+    }
+    #gallery-tabs {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .gallery-item-part {
+        padding-top: 0px;
+    }
+    .gallery-tab-image h4 {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .gallery-tab-image {
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:380px){
+    #gallery .nav-tabs .nav-link {
+        padding: 11px 8px;
+        font-size: 11px;
+    }
+    #gallery .nav-tabs {
+        width: 287px;
+        margin: 0 auto;
+    }
+    #gallery-tabs {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .gallery-item-part {
+        padding-top: 0px;
+    }
+    .gallery-image .col {
+        flex: 100%;
+        display: block;
+    }
+    .gallery-image .col-5 {
+        max-width: 100%;
+        flex: 100%;
+    }
+    .gallery-tab-image {
+        margin-bottom: 40px;
+    }
+}
+/*========================= Contact us Page =========================*/
+@media(min-width:992px) and (max-width:1199px){
+    #contact-us {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .address-part {
+        padding: 40px 0;
+    }
+    #contact-us .nav-tabs .nav-link {
+        width: 33.33%;
+        font-size: 20px;
+        padding:15px 10px;
+        text-align: center;
+    }
+    .addres-main {
+        margin-left: 20px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    #contact-us {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .address-part {
+        padding: 40px 0;
+    }
+    #contact-us .nav-tabs .nav-link {
+        width: 33.33%;
+        font-size: 20px;
+        padding:15px 10px;
+        text-align: center;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    #contact-us {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .address-part {
+        padding: 20px 0;
+    }
+    #contact-us .nav-tabs .nav-link {
+        width: 33.33%;
+        font-size: 16px;
+        padding:15px 10px;
+        text-align: center;
+    }
+    .office-title h6 {
+        font-size: 20px;
+        font-family: 'Arimo', sans-serif;
+        color: #4e5e73;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .office-title {
+        margin-bottom: 20px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .address-part {
+        border-bottom: none;
+    }
+    .addres-main {
+        padding-top: 30px;
+    }
+    .contact-right {
+        padding-top: 30px;
+    }
+}
+@media(max-width:575px){
+    #contact-us {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .address-part {
+        padding: 20px 0;
+    }
+    #contact-us .nav-tabs .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+    .office-title h6 {
+        font-size: 20px;
+        font-family: 'Arimo', sans-serif;
+        color: #4e5e73;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .office-title {
+        margin-bottom: 20px;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .address-part {
+        border-bottom: none;
+    }
+    .addres-main {
+        padding-top: 30px;
+    }
+    .contact-right {
+        padding-top: 30px;
+    }
+}
+/*========================= Recent Success Page =========================*/
+@media(min-width:768px) and (max-width:991px){
+    .recent-succes-part {
+        padding: 40px 0;
+    }
+}
+@media(min-width:576px) and (max-width:767.98px){
+    .recent-succes-part {
+        padding: 30px 0;
+    }
+}
+@media(max-width:575px){
+    .recent-succes-part {
+        padding: 30px 0;
+    }
+    .recent-succes-item {
+        margin: 15px 0;
+    }
+    #recent-success {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+}
+
+/*========================= Faculties Page =========================*/
+@media(min-width:992px) and (max-width:1199px){
+    .course-info h3 {
+        font-size: 24px;
+    }
+    .xtra11 {
+        padding-left: 40px;
+    }
+    .course-info h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .market-place {
+        padding-top: 10px;
+    }
+    #faculties .nav-tabs .nav-link {
+        padding: 15px 12px;
+        font-size: 18px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    #faculties .nav-tabs .nav-link {
+        padding: 20px 18px;
+        font-size: 18px;
+        width: 33.33%;
+        text-align:center;
+    }
+    #faculties .nav-tabs .nav-link:last-child {
+        border-right: 1px solid #f1f1f1;
+    }
+    .course-info h3 {
+        font-size: 18px;
+    }
+    .xtra11 {
+        padding-left: 30px;
+    }
+    .course-info h5 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .trainer p {
+        margin-bottom: 0;
+    }
+    .market-place {
+        padding-top: 0px;
+    }
+    .faculty-tabs {
+        padding-bottom: 30px;
+    }
+    #faculties {
+        padding-bottom: 0;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    #faculties .nav-tabs .nav-link {
+        padding: 10px 5px;
+        font-size: 20px;
+        /*border: 1px solid #f1f1f1;*/
+        width: 50%;
+        text-align: center;
+    }
+    .trainer-part {
+        padding: 30px 0;
+    }
+    .trainer-info {
+        padding-top: 50px;
+    }
+    .xtra11 {
+        padding-left: 40px;
+    }
+    #faculties {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    #faculties .course-info h3 {
+        padding-top:10px;
+    }
+    .faculty-tabs {
+        padding-bottom: 5px;
+    }
+
+}
+@media(max-width:575px){
+    #faculties .nav-tabs .nav-link {
+        padding: 10px 5px;
+        font-size: 12px;
+        /*border: 1px solid #f1f1f1;*/
+        width: 50%;
+        text-align: center;
+    }
+    #faculties {
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+    .trainer-part {
+        padding: 30px 0;
+    }
+    .faculty-tabs {
+        padding-bottom: 0px;
+    }
+    .trainer-info {
+        padding-top: 30px;
+    }
+    .trainer-info .d-flex {
+        display: block!important;
+    }
+    .xtra11 {
+        padding-left: 0px;
+    }
+    .market-place img {
+        width: 40%;
+    }
+    .market-place img {
+        margin-right: 19px;
+    }
+    .trainer-info .course-info h5 {
+        line-height: 30px;
+    }
+    .market-place {
+        padding-top: 0px;
+    }
+    #faculties .nav-tabs .nav-link:first-child {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+/*========================= FAQ Page =========================*/
+@media(max-width:575px){
+    #faq #faculties .nav-tabs .nav-link {
+        width: 50%;
+    }
+    /* .card-header .btn-link i {
+        display: none;
+    } */
+    .card-header .btn {
+        padding: 0 0 15px 0;
+        font-size: 14px;
+    }
+    .card-body {
+        padding: 20px 15px;
+    }
+    .card-header button {
+        font-size: 16px;
+    }
+}
+@media(min-width:576px) and (max-width:767.98px){
+    .card-header .btn-link i {
+        display: none;
+    }
+    #faq #faculties .nav-tabs .nav-link {
+        width: 50%;
+    }
+
+}
+@media(min-width:768px) and (max-width:991.98px){
+    #faq #faculties .nav-tabs .nav-link {
+        padding: 20px 10px;
+        font-size: 15px;
+    }
+}
+
+
+/*=================================================
+        addimission part start
+===================================================*/
+@media(max-width:575px){
+    #addmission-tab-part .tab-list {
+        width: 292px;
+        font-size: 14px;
+    }
+    #addmission-tab-part .tab-list .offline {
+        width: 50%;
+
+    }
+
+    #addmission-tab-part .tab-list .online {
+        width: 50%;
+
+    }
+    #addmission-tab-part h2 {
+        font-size: 30px;
+    }
+
+    #addmission-tab-part th {
+        font-size: 3vw;
+    }
+
+    #addmission-tab-part td {
+        font-size: 3vw;
+    }
+
+}
+/*=================================================
+        addimission part end
+===================================================*/
+
+
+/*=================================================
+        Scholership page start
+===================================================*/
+@media(min-width:768px) and (max-width:991.98px){
+    #scholership {
+        padding: 70px 0;
+    }
+}
+@media(min-width:576px) and (max-width:767.98px){
+    #scholership {
+        padding: 50px 0;
+    }
+    .customcheck {
+        margin-right: 16px;
+    }
+}
+@media(max-width:576px){
+#scholership {
+    padding: 50px 0;
+}
+.customcheck {
+    padding-left: 20px;
+    margin-right: 5px;
+}
+.ru {
+    margin-right: 20px;
+}
+}
+/*=================================================
+        Get admission  page start
+===================================================*/
+@media(max-width:576px){
+.ru-main {
+    text-align: left!important;
+}
+#getintouch-part table td {
+    font-size: 4VW;
+}
+#getintouch-part .tbl2 td {
+    font-size: 10px;
+    padding: 0 5px;
+}
+.tbl1 th {
+    font-size: 12px;
+}
+}
+@media(min-width:576px) and (max-width:767.98px){
+.ru {
+    margin-right: 0;
+}
+#getintouch-part .tbl2 td {
+    font-size: 10px;
+    padding: 0 5px;
+}
+.tbl1 th {
+    font-size: 14px;
+}
+#getintouch-part .tbl2 td {
+    font-size: 12px;
+}
+}
+@media(min-width:992px){
+.navbar-nav .nav-item:first-child {
+    padding-left: 0;
+}
+.navbar-nav .nav-item:last-child {
+    padding-right: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-nav .nav-item .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ee2e24;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ee2e24;
+}
+/*
+    .navbar-nav .nav-item .nav-link:hover:after {
+        opacity: 1;
+        width: 100%;
+    }
+*/
+}
+
+/*========================= Job Placement Page =========================*/
+@media(min-width:992px) and (max-width:1199px) {
+.job_inner img {
+    left: -400px;
+}
+
+.job_inner ul li {
+    font-size: 14px;
+    line-height: 41px;
+}
+
+.student_text ul li {
+    font-size: 14px;
+}
+
+.student_img .overly ul li {
+    padding-right: 22px;
+}
+
+.job_shadow {
+    margin: 0 0px 30px 0;
+}
+
+.circular_text1 h5 {
+    padding-top: 5px;
+}
+
+.circular_btn a {
+    padding: 10px 20px;
+}
+
+.circular_text2 p {
+    font-size: 15px;
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+
+.circular_text1 p {
+    margin-bottom: 0;
+}
+
+.job_circular_bottom p {
+    padding-top: 4px;
+}
+
+.circular_bottom_btn a {
+    padding: 12px 30px;
+}
+}
+
+@media(min-width:768px) and (max-width:991px) {
+#mission_part {
+    padding: 60px 0 35px;
+}
+
+#job_work_part .col img.img-fluid {
+    max-width: inherit;
+}
+
+.mission_head h2 {
+    font-size: 28px;
+}
+
+.job_inner ul li {
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.job_inner ul li i {
+    padding-right: 10px;
+}
+
+#job_work_part {
+    padding-bottom: 21px;
+}
+
+.student_img .overly {
+    height: 71px;
+}
+
+.student_img .overly ul li a i {
+    line-height: 71px;
+}
+
+.job_shadow {
+    margin: 0 0px 30px 0;
+}
+
+#job_student_part {
+    padding-bottom: 60px;
+}
+
+.btn a {
+    padding: 15px 32px;
+    font-size: 19px;
+}
+
+.circular_text1 h5 {
+    padding-top: 0px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.circular_text1 h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.circular_text1 p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.circular_text2 p {
+    font-size: 13px;
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+.circular_btn a {
+    padding: 5px 15px;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+.circular_bottom_btn a {
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+.job_circular_bottom p {
+    font-size: 15px;
+    padding-top: 12px;
+}
+#cv {
+    padding-top: 0px;
+}
+#place_gall_part {
+    padding: 70px 0;
+}
+
+.pla_btn a {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 40px;
+}
+}
+
+@media(min-width:576px) and (max-width:767.98px) {
+.mission_head h2 {
+    font-size: 25px;
+}
+
+.job_inner ul li i {
+    font-size: 8px;
+    padding-right: 8px;
+}
+
+.job_inner img {
+    display: none;
+}
+
+#job_work_part .col img.img-fluid {
+    max-width: inherit;
+}
+
+#mission_part {
+    padding: 60px 0 30px;
+}
+
+.mission_head {
+    margin-bottom: 40px;
+}
+
+#job_student_part {
+    padding-bottom: 60px;
+}
+
+.student_text ul li span {
+    padding-right: 5px;
+}
+
+#job_work_part {
+    padding-bottom: 20px;
+}
+
+.job_shadow {
+    margin: 0 0px 30px 0;
+    border-bottom-left-radius: 5px;
+}
+
+.student_text ul li {
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.btn a {
+    padding: 15px 25px;
+    font-size: 18px;
+}
+
+.student_img {
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+.circular_btn a {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.circular_text2 p {
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+.circular_bottom_btn a {
+    padding: 12px 20px;
+    font-size: 18px;
+}
+
+.job_circular_bottom p {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+#job_circular_part {
+    padding: 50px 0;
+}
+
+#place_gall_part {
+    padding: 60px 0;
+}
+#cv {
+    padding-top: 0px;
+}
+.pla_btn a {
+    font-size: 18px;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+}
+
+@media(max-width:575px) {
+#mission_part {
+    padding: 50px 0;
+}
+.mission_head h2 {
+    font-size: 21px;
+}
+.mission_head {
+    margin-bottom: 30px;
+}
+.job_inner ul li {
+    font-size: 14px;
+    line-height: 30px;
+}
+.job_inner ul li i {
+    padding-right: 6px;
+}
+#job_work_part .col img.img-fluid {
+    max-width: inherit;
+}
+.student_img .overly {
+    height: 60px;
+}
+.job_logo {
+    margin-bottom: 15px;
+}
+.job_shadow {
+    margin: 0 0px 30px 0;
+}
+#cv form p {
+  line-height: 100px;
+  font-size: 14px;
+}
+#cv form{
+height:100px;
+}
+#cv {
+padding-bottom: 130px;
+padding-top: 0;
+}
+.student_img .overly ul li a i {
+    line-height: 60px;
+}
+#job_student_part {
+    padding-bottom: 50px;
+}
+.btn a {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+.circular_text1 h5 {
+    padding-top: 0px;
+    margin-bottom: 0;
+}
+.circular_btn {
+    text-align: center;
+}
+.circular_btn a {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.circular_text2 p {
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+.circular_text1 h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.job_circular_bottom p {
+    padding-top: 0px;
+    font-size: 13px;
+}
+.circular_bottom_btn a {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+#job_circular_part {
+    padding: 40px 0;
+}
+.plac_img {
+    padding-bottom: 15px;
+}
+#place_gall_part {
+    padding: 50px 0;
+}
+.pla_btn a {
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+}
+/*============== CV Bank Page ==================*/
+@media(min-width:992px) and (max-width:1199.98px){
+.cv-inner span {
+  font-size: 20px;
+}
+}
+@media(min-width:768px) and (max-width:991.98px){
+.cv-inner h3 i{
+  margin: 0 7px;
+}
+.cv-inner span {
+  font-size: 16px;
+}
+.cv-inner {
+  padding-top: 20px;
+}
+.xtra25 {
+  padding-bottom: 20px;
+}
+#cv-bank {
+  padding-bottom: 50px;
+}
+}
+@media(min-width:576px) and (max-width:767.98px){
+.cv-bank-head h1 {
+	font-size: 30px;
+}
+#cv-bank .faculty-tabs {
+	padding-bottom: 0px;
+}
+.cv-bank-head {
+  padding-bottom: 10px!important;
+}
+.xtra25 {
+	padding-bottom: 10px;
+}
+.cv-inner {
+	padding-top: 10px;
+}
+#cv-bank {
+	padding-bottom: 30px;
+}
+}
+@media(max-width:575.98px){
+.cv-bank-head h1 {
+	font-size: 30px;
+}
+#cv-bank .faculty-tabs {
+	padding-bottom: 0px;
+}
+.cv-bank-head {
+  padding-bottom: 10px!important;
+}
+.xtra25 {
+	padding-bottom: 10px;
+}
+.cv-inner {
+	padding-top: 10px;
+}
+#cv-bank {
+	padding-bottom: 30px;
+}
+.left-rec{
+  display: none;
+}
+.right-rec {
+  display: none;
+}
+#recruiters {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+#recruiters .common-head h2 {
+	font-size: 30px;
+}
+.recruiters p i {
+	padding: 0;
+}
+.recruiters p{
+  font-size: 15px;
+}
+.cv-bank-btn a {
+	font-size: 17px;
+}
+.cv-inner h3 i {
+	transform: rotate(90deg);
+}
+.cv-inner span {
+	font-size: 21px;
+	display: block;
+}
+.cv-bank-btn a span {
+	display: inline-block;
+}
+
+}
+/*============== corona media =================*/
+@media(max-width:767px){
+  #corona {
+    padding-top: 30px;
+  }
+  .corona-thead span {
+    font-size: 30px;
+  }
+  .corona-thead p {
+    padding-top: 10px;
+  }
+  .cases {
+    margin-bottom: 20px;
+  }
+  .share-corona {
+    padding-bottom: 0;
+  }
+  .symtoms h2 {
+    font-size: 22px;
+  }
+  #symtoms{
+    margin-top: -30px;
+  }
+  .covid-19 {
+    top: 0;
+    transform: none;
+    background: #49596d;
+    padding: 0px 6px 3px 8px;
+}
+.covid-19 a {
+    writing-mode: initial;
+    text-orientation: initial;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+}
+
+@media(min-width:768px)and (max-width:991px){
+  .corona-thead span {
+    font-size: 36px;
+  }
+  .cases h4 {
+    font-size: 20px;
+  }
+  .cases h2 {
+    font-size: 40px;
+  }
+  .cases-world h2 {
+    font-size: 26px;
+  }
+  .cases-world {
+    padding: 30px 20px;
+  }
+  .corona-thead p {
+    padding-top: 10px;
+  }
+}
+
+@media(min-width:992px)and (max-width:1199px){
+  .corona-thead span {
+    font-size: 50px;
+  }
+  .cases h4 {
+    font-size: 30px;
+  }
+  .cases h2 {
+    font-size: 50px;
+  }
+  .cases-world h2 {
+    font-size: 36px;
+  }
+  .cases-world {
+    padding: 30px 20px;
+  }
+  .corona-thead p {
+    padding-top: 10px;
+  }
+}
+/*======= Ramadan ===========*/
+@media(max-width:767px){
+.ramadan-share p {
+  font-size:16px;
+}
+.ramadan-share i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+#ramadan {
+  padding-top: 15px;
+}
+
+.payment b {
+  display: block;
+  text-align: center;
+}
+.payment span {
+  font-size: 14px;
+}
+
+.news-modal .form-control {
+    margin-bottom: 15px;
+}
+
+.news-modal textarea.form-control {
+    padding-top: 6px !important;
+}
+.news-modal {
+    width: 400px;
+}
+}
+
+@media(max-width:575px){
+  .news-modal {
+      width: 320px;
+  }
+  .scholership .card-header .btn {
+    font-size: 13px;
+  }
+  .scholership .card-body p {
+    font-size: 13px;
+  }
+}
