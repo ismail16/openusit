@@ -38,33 +38,33 @@ class PagesController extends Controller
     {
 
 
-        return $request;
+        // return $request;
 
-        $this->validate($request, [
-            'name' => 'required',
-            'phone' => 'required',
-            'email' => 'required',
-            'father_name' => 'required',
-            'mother_name' => 'required',
-            'present_address' => 'required',
-            'permanent_address' => 'required',
-            'occupation' => 'required',
-            'dob' => 'required',
-            'country' => 'required',
-            'gender' => 'required',
-            'religion' => 'required',
-            'marital_status' => 'required',
-            'district' => 'required',
-            'thana' => 'required',
-            'zip_code' => 'required',
-            'guardian_number' => 'required',
-            'relationship' => 'required',
-        ]);
+        // $this->validate($request, [
+        //     'name' => 'required',
+        //     'phone' => 'required',
+        //     'email' => 'required',
+        //     'father_name' => 'required',
+        //     'mother_name' => 'required',
+        //     'present_address' => 'required',
+        //     'permanent_address' => 'required',
+        //     'occupation' => 'required',
+        //     'dob' => 'required',
+        //     'country' => 'required',
+        //     'gender' => 'required',
+        //     'religion' => 'required',
+        //     'marital_status' => 'required',
+        //     'district' => 'required',
+        //     'thana' => 'required',
+        //     'zip_code' => 'required',
+        //     'guardian_number' => 'required',
+        //     'relationship' => 'required',
+        // ]);
 
 
         $user = new user();
         $user->role_id = 2;
-        $user->username = $request->username;
+        $user->username = rand(5,10000);
         $user->name = $request->name;
         $user->phone = $request->phone;
         $user->email = $request->email;
@@ -74,7 +74,7 @@ class PagesController extends Controller
 
         $StudentCourse = new StudentCourse();
         $StudentCourse->user_id = $user->id;
-        $StudentCourse->course_id = $request->course_id;
+        $StudentCourse->course_id = 'null';
         $StudentCourse->reference_name = $request->reference_name;
         $StudentCourse->reference_id = $request->reference_id;
         $StudentCourse->reference_mobile = $request->reference_mobile;
@@ -89,7 +89,7 @@ class PagesController extends Controller
         $StudentInfo->office_address = $request->office_address;
         $StudentInfo->nid = $request->nid;
         $StudentInfo->occupation = $request->occupation;
-        $StudentInfo->dob = $request->dob;
+        $StudentInfo->birthday = $request->birthday;
         $StudentInfo->country = $request->country;
         $StudentInfo->blood_group = $request->blood_group;
         $StudentInfo->gender = $request->gender;
@@ -104,36 +104,35 @@ class PagesController extends Controller
 
         $ssc_arr = array(
             "institute" => $request->institute1,
-            "board" => $request->board,
-            "passing_year" => $request->passing_year,
-            "result" => $request->board
+            "board" => $request->board1,
+            "passing_year" => $request->passing_year1,
+            "result" => $request->result1
         );        
         $StudentInfo->ssc = json_encode($ssc_arr);
 
         $hsc_diploma_arr = array(
-            "institute" => $request->institute1,
-            "board" => $request->board,
-            "passing_year" => $request->passing_year,
-            "result" => $request->board
+            "institute" => $request->institute2,
+            "board" => $request->board2,
+            "passing_year" => $request->passing_year2,
+            "result" => $request->result2
         );        
         $StudentInfo->hsc_diploma = json_encode($hsc_diploma_arr);
 
         $graduation_arr = array(
-            "institute" => $request->institute1,
-            "board" => $request->board,
-            "passing_year" => $request->passing_year,
-            "result" => $request->board
+            "institute" => $request->institute3,
+            "board" => $request->board3,
+            "passing_year" => $request->passing_year3,
+            "result" => $request->result3
         );        
         $StudentInfo->graduation = json_encode($graduation_arr);
 
         $post_graduation_arr = array(
-            "institute" => $request->institute1,
-            "board" => $request->board,
-            "passing_year" => $request->passing_year,
-            "result" => $request->board
+            "institute" => $request->institute4,
+            "board" => $request->board4,
+            "passing_year" => $request->passing_year4,
+            "result" => $request->result4
         );        
         $StudentInfo->post_graduation = json_encode($post_graduation_arr);
-
 
         $StudentInfo->status = 1;
         $StudentInfo->save();

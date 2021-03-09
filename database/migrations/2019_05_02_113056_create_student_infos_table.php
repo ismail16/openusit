@@ -23,7 +23,7 @@ class CreateStudentInfosTable extends Migration
             $table->string('office_address')->nullable();
             $table->string('nid')->nullable();
             $table->string('occupation');
-            $table->string('dob');
+            $table->string('birthday');
             $table->string('country');
             $table->string('blood_group')->nullable();
             $table->string('gender');

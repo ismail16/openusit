@@ -52,7 +52,7 @@
                         <input type="text" name="occupation" value="" placeholder="Occupation*" class="form-control ">
                     </div>
                     <div class="col-lg-6 col-sm-6">
-                        <input type="date" name="dob" value="" placeholder="Date of Birth*" class="form-control ">
+                        <input type="date" name="birthday" value="" placeholder="Date of Birth*" class="form-control ">
                     </div>
                     <div class="col-lg-6 col-sm-6">
                         <select class="form-control " name="country">
@@ -114,37 +114,37 @@
                 <table width="100%" class="text-center tbl2">
                     <tbody><tr>
                         <td>S.S.C / O Level</td>
-                        <td><input type="text" name="s_university"></td>
-                        <td><input type="text" name="s_board"></td>
-                        <td><input type="text" name="s_year"></td>
-                        <td><input type="text" name="s_gpa"></td>
+                        <td><input type="text" name="institute1"></td>
+                        <td><input type="text" name="board1"></td>
+                        <td><input type="text" name="passing_year1"></td>
+                        <td><input type="text" name="result1"></td>
                     </tr>
                 </tbody></table>
                 <table width="100%" class="text-center tbl2">
                     <tbody><tr>
                         <td>H.S.C / Diploma</td>
-                        <td><input type="text" name="h_university"></td>
-                        <td><input type="text" name="h_board"></td>
-                        <td><input type="text" name="h_year"></td>
-                        <td><input type="text" name="h_gpa"></td>
+                        <td><input type="text" name="institute2"></td>
+                        <td><input type="text" name="board2"></td>
+                        <td><input type="text" name="passing_year2"></td>
+                        <td><input type="text" name="result2"></td>
                     </tr>
                 </tbody></table>
                 <table width="100%" class="text-center tbl2">
                     <tbody><tr>
                         <td>Graduation</td>
-                        <td><input type="text" name="g_university"></td>
-                        <td><input type="text" name="g_board"></td>
-                        <td><input type="text" name="g_year"></td>
-                        <td><input type="text" name="g_gpa"></td>
+                        <td><input type="text" name="institute3"></td>
+                        <td><input type="text" name="board3"></td>
+                        <td><input type="text" name="passing_year3"></td>
+                        <td><input type="text" name="result3"></td>
                     </tr>
                 </tbody></table>
                 <table width="100%" class="text-center tbl2">
                     <tbody><tr>
                         <td>Post Graduation</td>
-                        <td><input type="text" name="pg_university"></td>
-                        <td><input type="text" name="pg_board"></td>
-                        <td><input type="text" name="pg_year"></td>
-                        <td><input type="text" name="pg_gpa"></td>
+                        <td><input type="text" name="institute4"></td>
+                        <td><input type="text" name="board4"></td>
+                        <td><input type="text" name="passing_year4"></td>
+                        <td><input type="text" name="result4"></td>
                     </tr>
                 </tbody></table>
             </div>
