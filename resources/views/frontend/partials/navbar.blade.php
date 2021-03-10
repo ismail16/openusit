@@ -16,7 +16,7 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="{{ route('about_us') }}">About</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
 
                 <li class="nav-item mobile-mega-menu d-block d-md-none">
@@ -50,13 +50,14 @@
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     <ul>
-                                        <li><a class="" href="responsive-web-design-training-in-bangladesh">Basic Computer training</a></li>
-                                        <li><a class="" href="responsive-web-design-training-in-bangladesh">Responsive Web Design</a></li>
-                                        <li><a class="" href="professional-web-development-training-in-bangladesh">Web Development</a></li>
-                                        <li><a class="" href="professional-graphic-design-training-in-bangladesh">Professional Graphic Design</a></li>
-                                        <li><a class="" href="spoken-english-training-in-bangladesh">Spoken English</a></li>
-                                        <li><a class="" href="digital-marketing-training-in-bangladesh">Digital Marketing</a></li>
-                                        <li><a class="" href="seo-and-affiliate-training-in-bangladesh">SEO &amp; Affiliate</a></li>
+                                        <li><a class="" href="#">Basic Computer training</a></li>
+                                        <li><a class="" href="#">Responsive Web Design</a></li>
+                                        <li><a class="" href="#">Web Development</a></li>
+                                        <li><a class="" href="#">Professional Graphic Design</a></li>
+                                        <li><a class="" href="#">Digital Marketing</a></li>
+                                        <li><a class="" href="#">SEO &amp; Affiliate</a></li>
+                                        <li><a class="" href="#">Networking</a></li>
+                                        <li><a class="" href="#">Spoken English</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -71,13 +72,14 @@
                         <div class="mega-border border-top-0">
                             <div class="mega-item">
                                 <ul>
-                                    <li><a class="" href="responsive-web-design-training-in-bangladesh">Basic Computer training</a></li>
-                                    <li><a class="" href="responsive-web-design-training-in-bangladesh">Responsive Web Design</a></li>
-                                    <li><a class="" href="professional-web-development-training-in-bangladesh">Web Development</a></li>
-                                    <li><a class="" href="professional-graphic-design-training-in-bangladesh">Professional Graphic Design</a></li>
-                                    <li><a class="" href="spoken-english-training-in-bangladesh">Spoken English</a></li>
-                                    <li><a class="" href="digital-marketing-training-in-bangladesh">Digital Marketing</a></li>
-                                    <li><a class="" href="seo-and-affiliate-training-in-bangladesh">SEO &amp; Affiliate</a></li>
+                                    <li><a class="" href="#">Basic Computer training</a></li>
+                                    <li><a class="" href="#">Responsive Web Design</a></li>
+                                    <li><a class="" href="#">Web Development</a></li>
+                                    <li><a class="" href="#">Professional Graphic Design</a></li>
+                                    <li><a class="" href="#">Digital Marketing</a></li>
+                                    <li><a class="" href="#">SEO &amp; Affiliate</a></li>
+                                    <li><a class="" href="#">Networking</a></li>
+                                    <li><a class="" href="#">Spoken English</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,15 +93,15 @@
                         <div class="mega-border border-top-0">
                             <div class="mega-item">
                                 <ul>
-                                    <li><a class="" href="admission-form">Admission Form</a></li>
-                                    <li><a class="" href="admission-procedure">Admission Procedure</a></li>
+                                    <li><a class="" href="{{ route('student_apply') }}">Admission Form</a></li>
+                                    <li><a class="" href="#">Admission Procedure</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="gallery">Gallery</a>
+                    <a class="nav-link" href="#">Gallery</a>
                 </li>
                 <li class="nav-item mobile-mega-menu d-block d-md-none">
                     <div id="accordion">
@@ -126,8 +128,8 @@
                         <div class="mega-border border-top-0">
                             <div class="mega-item">
                                 <ul>
-                                    <li><a class="" href="recent-success">Recent Success</a></li>
-                                    <li><a class="" href="freelancing-success">Student's Preview</a></li>
+                                    <li><a class="" href="#">Recent Success</a></li>
+                                    <li><a class="" href="#">Student's Preview</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -135,7 +137,7 @@
                 </li>
 
             <li class="nav-item ">
-                <a class="nav-link" href="contact">Contact</a>
+                <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item d-flex align-items-center">
                 <a class="_nav-link btn btn-warning mr-2" href="{{ route('student_login') }}">Login</a>
