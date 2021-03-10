@@ -5,14 +5,14 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
-use App\Student;
+use App\Models\StudentCourse;
 use DB;
 
 class StudentController extends Controller
 {
     public function index()
     {
-        $students = Student::orderBy('id','DESC')->get();
+        $students = StudentCourse::orderBy('id','DESC')->get();
         return view('admin.student.all', compact('students'));
     }
 
@@ -34,7 +34,7 @@ class StudentController extends Controller
             'duration' => 'required',
         ]);
 
-        $student = new Student;
+        $student = new StudentCourse;
         $student->user_id = $request->user_id;
         $student->batch_id = $request->batch;
         $student->fees = $request->fees;
@@ -72,16 +72,16 @@ class StudentController extends Controller
         return view('admin.student.users', compact('users'));
     }
     public function certificate(Request $request){
-        DB::table('students')->where('batch_id', $request->batch_id)->where('is_certified', 0)->update(['is_certified' => 1,'updated_at'=> now()]);
+        DB::table('student_courses')->where('batch_id', $request->batch_id)->where('is_certified', 0)->update(['is_certified' => 1,'updated_at'=> now()]);
         return back();
     }
     public function payment(Request $request){
-        DB::table('students')->where('id', $request->id)->increment('given_amount', $request->given_amount);
+        DB::table('student_courses')->where('id', $request->id)->increment('given_amount', $request->given_amount);
         return back();
     }
 
     public function result(Request $request){
-        DB::table('students')->where('id', $request->id)->update(['result' => strtoupper($request->result)]);
+        DB::table('student_courses')->where('id', $request->id)->update(['result' => strtoupper($request->result)]);
         return back();
     }
 

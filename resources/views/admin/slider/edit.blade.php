@@ -1,10 +1,9 @@
-@extends('layouts.admin.app')
+@extends('admin.layouts.master')
 
-@section('title', 'Bornomala IT | Admin Dashboard')
+@section('title', 'Edit Slider')
 
 @push('css')
-<link rel="stylesheet" href="{{asset('bower_components/select2/dist/css/select2.min.css')}}">
-<link rel="stylesheet" href="{{asset('plugins/iCheck/all.css')}}">
+
 @endpush
 
 @section('content')
@@ -53,13 +52,5 @@
 @endsection
 
 @push('scripts')
-<script src="{{asset('bower_components/select2/dist/js/select2.full.min.js')}}"></script>
-<script>
-    $(function(){
-        $('.select2').select2();
-        // $('.select2').change(function(){
-        //     alert($(this).val());
-        // });
-    });
-</script>
+
 @endpush
