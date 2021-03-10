@@ -26,7 +26,7 @@
       <div class="card">
         <div class="card-body">
           <div class="table-responsive">
-            <div class="row">
+            <!-- <div class="row">
                 @php($total= 0)
                 @foreach($students as $student)
                   @php($total += $student->given_amount)
@@ -95,7 +95,7 @@
                   </div>
                 </form>
                 </div>
-            </div>
+            </div> -->
             <a href="{{route('admin.student.create')}}" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
               class="fa fa-plus"></i> Add New</a>
               <table id="example1" class="table table-bordered table-striped">
@@ -104,15 +104,11 @@
                     <th>SL</th>
                     <th>St. ID</th>
                     <th>Name</th>
-                    <th>Batch</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
                     <th>Course Name</th>
-                    <th>Duration</th>
-                    <th>Total Amount</th>
-                    <th>Given Amount</th>
-                    <th>Payment Status</th>
-                    <th>Certify Date</th>
-                    <th>Certification</th>
-                    <th>Result</th>
+                    <th>Date</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -120,54 +116,28 @@
                  <tr>
                   <td>{{$loop->index + 1}}</td>
                   <td class="text-center">{{$student->id}}</td>
-                  <td>{{$student->user->name}}</td>
-                  <td>{{$student->batch_id}} Batch</td>
+                  <td>{{$student->name}}</td>
+                  <td>{{$student->phone}}</td>
+                  <td>{{$student->email}}</td>
                   <td>
-                    @if($student->c_name == 1)
-                    Microsoft Office Application
-                    @elseif($student->c_name == 2)
-                    Graphics Design (Photoshop)
-                    @elseif($student->c_name == 3)
-                    Graphics Design (Illustrator)
-                    @else
-                    Web Design & Development
-                    @endif
+                    <a href="#">cource_id</a>
                   </td>
-                  <td>{{$student->duration}}
-                    @if($student->duration > 1 )
-                    Month
-                    @else
-                    Year
-                    @endif
-                  </td>
-                  <td>{{$student->fees}}</td>
-                  <td>{{$student->given_amount}}</td>
-                  <td class="text-center">
-                    @php($amount = $student->fees - $student->given_amount)
-                    @if($amount > $student->p_status)
-                    <span class="badge bg-red">{{$amount}}</span>
-                    @else
-                    <span class="badge bg-green">Paid</span>
-                    @endif
-                  </td>
+                  <td>{{$student->created_at->format('d-m-Y')}}</td>
                   <td>
-                    @if($student->is_certified == 1)
-                    {{date('d M y', strtotime($student->updated_at))}}
-                    @endif
-                  </td>
-                  <td class="text-center">
-                    @if($student->is_certified == 0)
-                    <span class="badge bg-red">No</span>
-                    @else
-                    <span class="badge bg-green">Yes</span>
-                    @endif
-                  </td>
-                  <td class="text-center">
-                    @if($student->result == null)
-                    <span class="badge bg-red">No</span>
-                    @else
-                    <span class="badge {{$student->result == 'A+' || $student->result == 'A' || $student->result == 'A-' || $student->result == 'B'?'bg-green':'bg-yellow'}}">{{$student->result}}</span>
-                    @endif
+                      <a href="{{route('admin.student.edit', $student->id)}}"
+                        class="btn btn-xs btn-success"><i class="fa fa-edit"></i></a>
+
+                      <a href="#" class="btn btn-xs btn-danger table-action-btn on_delete"
+                        data-content="{{$loop->index+1}}"><i
+                        class="fa fa-trash"></i></a>
+
+                      <form id="on_delete{{$loop->index+1}}"
+                          action="{{route('admin.student.destroy', $student->id)}}"
+                          method="post" class="delete hidden"
+                          data-content="{{$student->id}}">
+                          {{csrf_field()}}
+                          {{method_field('DELETE')}}
+                      </form>
                   </td>
                 </tr>
                 @endforeach

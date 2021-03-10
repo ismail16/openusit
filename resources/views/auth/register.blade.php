@@ -11,10 +11,10 @@
     <form action="{{ route('student_apply_post') }}" method="post" enctype="multipart/form-data">
         @csrf                
         <div class="row card">
-            @if(session()->has('message'))
+            @if(session()->has('success'))
             <div class="col-lg-12 col-xl-12 d-flex justify-content-center">
                 <div class="alert alert-success text-center pr-3 pl-3 p-1 mb-1">
-                    {{session('message')}}
+                    {{session('success')}}
                     <button type="button" class="close ml-4 text-danger" data-dismiss="alert">&times;</button>
                 </div>
             </div>
