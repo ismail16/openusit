@@ -8,7 +8,7 @@
 
 @section('content')
 <div class="container mt-2">
-    <form action="{{ route('student_apply') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('student_apply_post') }}" method="post" enctype="multipart/form-data">
         @csrf                
         <div class="row card">
             @if(session()->has('message'))
