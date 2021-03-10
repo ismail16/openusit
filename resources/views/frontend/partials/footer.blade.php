@@ -5,12 +5,13 @@
         <div class="row">
             <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="footer-logo text-center">
-                    <img src="{{ asset('images/logo.png') }}" class="img-fluid" alt="footer-logo">
+                    <h1>Openus IT Institute</h1>
+                    <!-- <img src="{{ asset('images/logo.png') }}" class="img-fluid" alt="footer-logo"> -->
                     <h4>CHANGE I GROW I SUCCEED</h4>
                     <div class="social">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -22,7 +23,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <div class="col-lg-9 px-0 xtra6 col-10 col-md-9 d-flex align-items-center">
-                            <span> <strong>Office:</strong> <br>Bipus Stand</span>
+                            <span> <strong>Office:</strong> <br>Modina Market, Bipus, Mirzapur, Tangail</span>
                         </div>
                     </div>
                     <div class="row contact-common xtra21">
@@ -31,7 +32,7 @@
                         </div>
                         <div class="col-lg-9 px-0 col-10 col-md-9 d-flex align-items-center">
                             <div class="phone">
-                              <a style="color: #444" href="tel:+8801966177177">+880 1966177177</a>
+                              <a style="color: #444" href="tel:+8801644966937">+8801644966937</a>
                           </div>
                       </div>
                   </div>
@@ -53,9 +54,10 @@
         <div class="contact contact2">
             <h3>our courses</h3>
             <ul>
-                <li><a href="responsive-web-design-training-in-bangladesh">Web Design</a></li>
-                <li><a href="professional-web-development-training-in-bangladesh">Web Development</a></li>
-                <li><a href="professional-graphic-design-training-in-bangladesh">Graphic Design</a></li>
+                <li><a class="" href="#">Basic Computer</a></li>
+                <li><a class="" href="#">Web Design</a></li>
+                <li><a class="" href="#">Web Development</a></li>
+                <li><a class="" href="#">Graphic Design</a></li>
             </ul>
         </div>
     </div>
@@ -64,9 +66,10 @@
             <h3 style="color: transparent" class="d-sm-none">our courses</h3>
             <h3 style="color:transparent; visibility: hidden" class="xtra7">our courses</h3>
             <ul>
-                
-                <li><a href="digital-marketing-training-in-bangladesh">Digital Marketing</a></li>
-                <li><a href="communicative-english-training-in-bangladesh">Communicative English</a></li>
+                <li><a class="" href="#">Digital Marketing</a></li>
+                <li><a class="" href="#">SEO &amp; Affiliate</a></li>
+                <li><a class="" href="#">Networking</a></li>
+                <li><a class="" href="#">Spoken English</a></li>
             </ul>
         </div>
     </div>
@@ -74,12 +77,12 @@
         <div class="contact">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="about">About us</a></li>
-                <li><a href="gallery">Gallery</a></li>
-                <li><a href="job-placement">Job Placement</a></li>
-                <li class="d-none d-lg-block d-md-block"><a href="freelancing-success">Student Works</a></li>
-                <li class="d-none d-lg-block d-md-block"><a href="recent-success">Recent Success</a></li>
-                <li class="d-none d-lg-block d-md-block"><a href="contact">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Job Placement</a></li>
+                <li class="d-none d-lg-block d-md-block"><a href="#">Student Works</a></li>
+                <li class="d-none d-lg-block d-md-block"><a href="#">Recent Success</a></li>
+                <li class="d-none d-lg-block d-md-block"><a href="#">Contact us</a></li>
             </ul>
         </div>
     </div>
@@ -87,9 +90,9 @@
         <div class="contact">
             <h3 style="color: transparent" class="d-sm-none">Quick Links</h3>
             <ul>
-              <li><a href="freelancing-success">Student Works</a></li>
-              <li><a href="recent-success">Recent Success</a></li>
-              <li><a href="contact">Contact us</a></li>
+              <li><a href="#">Student Works</a></li>
+              <li><a href="#">Recent Success</a></li>
+              <li><a href="#">Contact us</a></li>
           </ul>
       </div>
   </div>
@@ -101,16 +104,16 @@
 <!-- ========= footer bottom Part Start Here ========== -->
 <section id="footer-btm">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 order-lg-first order-md-first order-last">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-lg-6">
                 <div class="footerbtm">
                     <p>Copyright &copy; 2021 Oppenus IT Institute. |<a href="/sitemap"> Sitemap</a></p>
                 </div>
             </div>
-            <div class="col-lg-6 px-0 order-lg-last order-md-last order-first">
+            <!-- <div class="col-lg-6 px-0 order-lg-last order-md-last order-first">
               <div class="payment">
                 <p><b>We Accept:</b> &nbsp; <span><img src="https://creativeitinstitute.com/front/images/bkash1.png" alt="" width="50" class="img-fluid"> : 01990779780, 01990779766</span> &nbsp; <span><img src="https://creativeitinstitute.com/front/images/rocket.png" alt="" width="50" class="img-fluid"> : 019907797667</span></p>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
