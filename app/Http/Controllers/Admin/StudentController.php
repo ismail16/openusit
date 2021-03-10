@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
+use App\Models\StudentInfo;
 use App\Models\StudentCourse;
 use DB;
 
@@ -12,8 +13,11 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $students = StudentCourse::orderBy('id','DESC')->get();
-        return view('admin.student.all', compact('students'));
+        $students = User::where('role_id', 2)->orderBy('id', 'desc')->get();
+        $studentinfos = StudentInfo::orderBy('id','DESC')->get();
+        $studentcourses = StudentCourse::orderBy('id','DESC')->get();
+
+        return view('admin.student.all', compact('students','studentinfos','studentcourses'));
     }
 
     public function create()
