@@ -27,61 +27,76 @@
         <div class="card-body">
           <div class="table-responsive">
             <div class="row">
-                    @php($total= 0)
-                    @foreach($students as $student)
-                      @php($total += $student->given_amount)
-                    @endforeach
+                @php($total= 0)
+                @foreach($students as $student)
+                  @php($total += $student->given_amount)
+                @endforeach
+                <div class="col-md-4">
+                  <form action="{{route('admin.certificate')}}" method="post">
+                    @csrf
+                    <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="number" name="batch_id" class="form-control form-control-sm" placeholder="Batch ID" required/>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <button type="submit" class="btn btn-sm bg-green"> <i class="fa fa-refresh" aria-hidden="false"></i> Certify</button>
+                          </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col-md-4">
+                <form action="{{route('admin.payment')}}" method="post">
+                  @csrf
+                  <div class="row">
                     <div class="col-md-3">
-                      <form action="{{route('admin.certificate')}}" method="post">
-                        @csrf
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <input type="number" name="batch_id" class="form-control form-control-sm" placeholder="Batch ID" required/>
-                            </div>
+                        <div class="form-group">
+                            <input type="number" name="id" class="form-control form-control-sm" placeholder="ID" required/>
                         </div>
-                        <button type="submit" class="pull-left btn btn-sm bg-green"> <i class="fa fa-refresh" aria-hidden="false"></i> Certify</button>
-                      </form>
                     </div>
+                    <div class="col-md-5">
+                        <div class="form-group">
+                            <input type="number" name="given_amount" class="form-control form-control-sm" placeholder="Due Amount" required/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-sm bg-green"> <i class="fa fa-refresh" aria-hidden="false"></i> Pay</button>
+                        </div>
+                    </div>
+                  </div>
+                </form>
+                </div>
 
+                <div class="col-md-4">
+                <form action="{{route('admin.result')}}" method="post">
+                  @csrf
+                  <div class="row">
                     <div class="col-md-3">
-                    <form action="{{route('admin.payment')}}" method="post">
-                      @csrf
-                      <div class="col-md-1">
-                          <div class="form-group">
-                              <input type="number" name="id" class="form-control form-control-sm" placeholder="ID" required/>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                              <input type="number" name="given_amount" class="form-control form-control-sm" placeholder="Due Amount" required/>
-                          </div>
-                      </div>
-                      <button type="submit" class="pull-left btn btn-sm bg-green"> <i class="fa fa-refresh" aria-hidden="false"></i> Pay</button>
-                    </form>
+                        <div class="form-group">
+                            <input type="number" name="id" class="form-control form-control-sm" placeholder="ID" required/>
+                        </div>
                     </div>
-
                     <div class="col-md-3">
-                    <form action="{{route('admin.result')}}" method="post">
-                      @csrf
-                      <div class="col-md-1">
-                          <div class="form-group">
-                              <input type="number" name="id" class="form-control form-control-sm" placeholder="ID" required/>
-                          </div>
-                      </div>
-                      <div class="col-md-1">
-                          <div class="form-group">
-                              <input type="text" name="result" class="form-control form-control-sm" placeholder="Result" required/>
-                          </div>
-                      </div>
-                      <button type="submit" class="pull-left btn btn-sm bg-green"> <i class="fa fa-refresh" aria-hidden="false"></i> Result</button>
-                    </form>
+                        <div class="form-group">
+                            <input type="text" name="result" class="form-control form-control-sm" placeholder="Result" required/>
+                        </div>
                     </div>
-
-                <span class="badge bg-green" style="margin-left:15px">{{$total}}</span>
-                <a href="{{route('admin.student.create')}}" class="pull-right btn btn-sm btn-primary"> <i class="fa fa-plus"></i> Add New</a>
-
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <button type="submit" class="pull-left btn btn-sm bg-green"> <i class="fa fa-refresh" aria-hidden="false"></i> Result</button>
+                            <span class="badge bg-green" style="margin-left:15px">1000000{{$total}}</span>
+                        </div>
+                    </div>                    
+                  </div>
+                </form>
+                </div>
             </div>
-            <a href="" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
+            <a href="{{route('admin.student.create')}}" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
               class="fa fa-plus"></i> Add New</a>
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -164,7 +179,5 @@
     </div>
   </div>
 </section>
-
-
 
 @endsection

@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Student;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Student;
+use App\Models\StudentCourse;
 use Auth;
 
 class DashboardController extends Controller
 {
     public function index(){
-        $infos = Student::where('user_id', Auth::user()->id)->get();
+        $infos = StudentCourse::where('user_id', Auth::user()->id)->get();
         return view('student.dashboard', compact('infos'));
     }
 }
