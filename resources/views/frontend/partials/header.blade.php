@@ -49,58 +49,35 @@
         "@context": "https://www.schema.org",
         "@type": "LocalBusiness",
         "name": "Oppenus IT Institute",
-        "url": "https://www.creativeitinstitute.com/",
+        "url": "https://www.openusit.com/",
         "sameAs": [
-           "https://www.facebook.com/creativeitinstitute",
-           "https://www.linkedin.com/company/creative-it-institute",
-           "https://www.youtube.com/channel/UCoAYYQs4FQkKliI8dUEV2Aw"
+           "https://www.facebook.com/openusit",
+           "https://www.linkedin.com/company/copenusit",
+           "https://www.youtube.com"
         ],
-        "logo": "https://www.creativeitinstitute.com/front/images/logo.png",
-        "image": "https://www.creativeitinstitute.com/front/images/banners/banner2a.jpg",
-        "description": "Oppenus IT is an institution where empowering the community for an excellent standard of learning is what we desire. We endeavor for the continuous improvement of our leaders who will work for constructing a better future. The institute is dedicated to serving the quality training programs under ISO 9001: 2008 certification which remarks us in the IT world. ",
+        "logo": "https://www.openusit.com/images/logo.png",
+        "image": "https://www.openusit.com/images/banner1.jpg",
+        "description": "Oppenus IT is an institution where empowering the community for an excellent standard of learning is what we desire. We endeavor for the continuous improvement of our leaders who will work for constructing a better future. The institute is dedicated to serving the quality training programs.",
         "address": {
            "@type": "PostalAddress",
            "streetAddress": "",
-           "addressLocality": "Dhanmondi",
+           "addressLocality": "Mirzapur",
            "addressRegion": "Dhaka",
-           "postalCode": "1205",
+           "postalCode": "1940",
            "addressCountry": "Bangladesh"
         },
         "geo": {
            "@type": "GeoCoordinates",
-           "latitude": "23.7413074",
-           "longitude": "90.3803915"
+           "latitude": "0000000",
+           "longitude": "0000000"
         },
         "hasMap": "",
          "openingHours": "Mo 09:00-20:00 Tu 09:00-20:00 We 09:00-20:00 Th 09:00-20:00 Fr 09:00-20:00 Sa 09:00-20:00 Su 09:00-20:00",
-        "telephone": "+880 7777777"
+        "telephone": "+880 9999999"
       }
     </script>
   </head>
   
 <body class="hero-anime">
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v5.0'
-      });
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
-
- <!-- ========= Mobile Header Part Start Here ========== -->
-
-
-<div class="d-none d-lg-block text-center" style="margin: 0px; background-color: #e52c23; padding: 2px 0px">
-  
+<div class="d-none d-lg-block text-center" style="margin: 0px; background-color: #4a950547; padding: 2px 0px">
 </div>

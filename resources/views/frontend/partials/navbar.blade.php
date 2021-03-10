@@ -137,9 +137,10 @@
             <li class="nav-item ">
                 <a class="nav-link" href="contact">Contact</a>
             </li>
-            <li class="nav-item ">
-            <a class="nav-link btn btn-warning" href="/login">Login</a>
-            </li>
+            <li class="nav-item d-flex align-items-center">
+                <a class="_nav-link btn btn-warning mr-2" href="{{ route('student_login') }}">Login</a>
+                <a class="_nav-link btn btn-warning" href="{{ route('student_apply') }}">Apply</a>
+            </li>        
         </ul>
     </div>
 </nav>

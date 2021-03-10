@@ -7,17 +7,23 @@
 @endpush
 
 @section('content')
-<div class="container emp-profile address">
-
-
+<div class="container mt-2">
     <form action="{{ route('student_apply') }}" method="post" enctype="multipart/form-data">
         @csrf                
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row form">
-                    <div class="col-lg-12 form-head">
-                        <h3>PERSONAL &amp; CONTACT INFORMATION</h3>
-                    </div>
+        <div class="row card">
+            @if(session()->has('message'))
+            <div class="col-lg-12 col-xl-12 d-flex justify-content-center">
+                <div class="alert alert-success text-center pr-3 pl-3 p-1 mb-1">
+                    {{session('message')}}
+                    <button type="button" class="close ml-4 text-danger" data-dismiss="alert">&times;</button>
+                </div>
+            </div>
+            @endif
+            <div class="col-lg-12 card-header">
+                <h3>PERSONAL &amp; CONTACT INFORMATION</h3>
+            </div>
+            <div class="col-lg-12 card-body" style="background-color: #4a950547;">
+                <div class="row form">                    
                     <div class="col-lg-12 col-sm-12">
                         <input type="text" name="name" value="" placeholder="Student Name*" class="form-control ">
                     </div>
@@ -61,6 +67,21 @@
                             <option value="Other">Other</option>
                         </select>
                     </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <select class="form-control " name="religion">
+                            <option value="">Religion*</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Christian">Christian</option>
+                            <option value="Buddhist">Buddhist</option>
+                            <option value="Sikh">Sikh</option>
+                            <option value="Parsi">Parsi</option>
+                            <option value="Jain">Jain</option>
+                            <option value="Jewish">Jewish</option>
+                            <option value="Spiritual">Spiritual</option>
+                            <option value="No_Religion">No Religion</option>
+                        </select>
+                    </div>
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-5 col-sm-4">
@@ -89,6 +110,28 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <select class="form-control " name="marital_status">
+                            <option value="">Meretial status*</option>
+                            <option value="">Select Marital Status *</option>
+                            <option value="Never_Married">Never Married</option>
+                            <option value="Legally_Separated">Legally Separated</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                            <option value="Anulled">Anulled</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4">
+                        <input type="text" name="district" value="" placeholder="District*" class="form-control ">
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <input type="text" name="thana" value="" placeholder="Thana*" class="form-control ">
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4">
+                        <input type="number" name="zip_code" value="" placeholder="Zip Code*" class="form-control ">
+                    </div>
                     
                     <div class="col-lg-6 col-sm-6">
                         <input type="text" name="guardian_number" value="" placeholder="Guardian’s Phone*" class="form-control ">
@@ -98,61 +141,74 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12" id="getintouch-part">
-                <div class="form-head">
-                    <h3>Educational Background</h3>
-                </div>
-                <table width="100%" height="50" class="text-center tbl1">
-                    <tbody><tr>
-                        <th>Degree</th>
-                        <th>School/College/University</th>
-                        <th>Board</th>
-                        <th>Year of Passing</th>
-                        <th>Division / GPA</th>
-                    </tr>
-                </tbody></table>
-                <table width="100%" class="text-center tbl2">
-                    <tbody><tr>
-                        <td>S.S.C / O Level</td>
-                        <td><input type="text" name="institute1"></td>
-                        <td><input type="text" name="board1"></td>
-                        <td><input type="text" name="passing_year1"></td>
-                        <td><input type="text" name="result1"></td>
-                    </tr>
-                </tbody></table>
-                <table width="100%" class="text-center tbl2">
-                    <tbody><tr>
-                        <td>H.S.C / Diploma</td>
-                        <td><input type="text" name="institute2"></td>
-                        <td><input type="text" name="board2"></td>
-                        <td><input type="text" name="passing_year2"></td>
-                        <td><input type="text" name="result2"></td>
-                    </tr>
-                </tbody></table>
-                <table width="100%" class="text-center tbl2">
-                    <tbody><tr>
-                        <td>Graduation</td>
-                        <td><input type="text" name="institute3"></td>
-                        <td><input type="text" name="board3"></td>
-                        <td><input type="text" name="passing_year3"></td>
-                        <td><input type="text" name="result3"></td>
-                    </tr>
-                </tbody></table>
-                <table width="100%" class="text-center tbl2">
-                    <tbody><tr>
-                        <td>Post Graduation</td>
-                        <td><input type="text" name="institute4"></td>
-                        <td><input type="text" name="board4"></td>
-                        <td><input type="text" name="passing_year4"></td>
-                        <td><input type="text" name="result4"></td>
-                    </tr>
-                </tbody></table>
+
+            <div class="col-lg-12 card-header">
+                <h3>Educational Background</h3>
             </div>
-            <div class="col-lg-12">
-                <div class="row form">
-                    <div class="col-lg-12 form-head">
-                        <h3>Reference Details</h3>
-                    </div>
+
+            <div class="col-lg-12" id="getintouch-part"  style="background-color: #4a950547;">
+                <table width="100%" height="50" class="text-center tbl1">
+                    <tbody>
+                        <tr>
+                            <th>Degree</th>
+                            <th>School/College/University</th>
+                            <th>Board</th>
+                            <th>Year of Passing</th>
+                            <th>Division / GPA</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" class="text-center tbl2">
+                    <tbody>
+                        <tr>
+                            <td>S.S.C / O Level</td>
+                            <td><input type="text" class="form-control" name="institute1"></td>
+                            <td><input type="text" class="form-control" name="board1"></td>
+                            <td><input type="text" class="form-control" name="passing_year1"></td>
+                            <td><input type="text" class="form-control" name="result1"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" class="text-center tbl2">
+                    <tbody>
+                        <tr>
+                            <td>H.S.C / Diploma</td>
+                            <td><input type="text" class="form-control" name="institute2"></td>
+                            <td><input type="text" class="form-control" name="board2"></td>
+                            <td><input type="text" class="form-control" name="passing_year2"></td>
+                            <td><input type="text" class="form-control" name="result2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" class="text-center tbl2">
+                    <tbody>
+                        <tr>
+                            <td>Graduation</td>
+                            <td><input type="text" class="form-control" name="institute3"></td>
+                            <td><input type="text" class="form-control" name="board3"></td>
+                            <td><input type="text" class="form-control" name="passing_year3"></td>
+                            <td><input type="text" class="form-control" name="result3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="100%" class="text-center tbl2">
+                    <tbody>
+                        <tr>
+                            <td>Post Graduation</td>
+                            <td><input type="text" class="form-control" name="institute4"></td>
+                            <td><input type="text" class="form-control" name="board4"></td>
+                            <td><input type="text" class="form-control" name="passing_year4"></td>
+                            <td><input type="text" class="form-control" name="result4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-lg-12 card-header">
+                <h3>Reference Details</h3>
+            </div>
+            <div class="col-lg-12" style="background-color: #4a950547;">
+                <div class="row form mt-2">
                     <div class="col-lg-12 col-sm-12">
                         <input type="text" name="reference_name" value="" placeholder="Name*" class="form-control ">
                     </div>
@@ -165,8 +221,8 @@
                 </div>
             </div>
             <div class="col-lg-12 text-center">
-                <div class="submit">
-                    <button type="submit" class="btn">Submit</button>
+                <div class="p-2">
+                    <button type="submit" class="btn btn-warning pl-5 pr-5">Apply</button>
                 </div>
             </div>
         </div>

@@ -34,35 +34,41 @@ class PagesController extends Controller
         return view('frontend.pages.index');
     }
 
-    public function student_apply(Request $request)
+    public function student_login()
+    {
+        return view('auth.student_login');
+    }
+
+    public function student_apply()
+    {
+        return view('auth.register');
+    }
+
+    public function student_apply_post(Request $request)
     {
 
+        $this->validate($request, [
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'father_name' => 'required',
+            'mother_name' => 'required',
+            'present_address' => 'required',
+            'permanent_address' => 'required',
+            'occupation' => 'required',
+            'birthday' => 'required',
+            'country' => 'required',
+            'gender' => 'required',
+            'religion' => 'required',
+            'marital_status' => 'required',
+            'district' => 'required',
+            'thana' => 'required',
+            'zip_code' => 'required',
+            'guardian_number' => 'required',
+            'relationship' => 'required',
+        ]);
 
-        // return $request;
-
-        // $this->validate($request, [
-        //     'name' => 'required',
-        //     'phone' => 'required',
-        //     'email' => 'required',
-        //     'father_name' => 'required',
-        //     'mother_name' => 'required',
-        //     'present_address' => 'required',
-        //     'permanent_address' => 'required',
-        //     'occupation' => 'required',
-        //     'dob' => 'required',
-        //     'country' => 'required',
-        //     'gender' => 'required',
-        //     'religion' => 'required',
-        //     'marital_status' => 'required',
-        //     'district' => 'required',
-        //     'thana' => 'required',
-        //     'zip_code' => 'required',
-        //     'guardian_number' => 'required',
-        //     'relationship' => 'required',
-        // ]);
-
-
-        $user = new user();
+        $user = new User();
         $user->role_id = 2;
         $user->username = rand(5,10000);
         $user->name = $request->name;
@@ -74,14 +80,14 @@ class PagesController extends Controller
 
         $StudentCourse = new StudentCourse();
         $StudentCourse->user_id = $user->id;
-        $StudentCourse->course_id = 'null';
+        $StudentCourse->course_id = 0;
         $StudentCourse->reference_name = $request->reference_name;
         $StudentCourse->reference_id = $request->reference_id;
         $StudentCourse->reference_mobile = $request->reference_mobile;
         $StudentCourse->save();
 
         $StudentInfo = new StudentInfo();
-        $StudentInfo->user_id = $user->user_id;
+        $StudentInfo->user_id = $user->id;
         $StudentInfo->father_name = $request->father_name;
         $StudentInfo->mother_name = $request->mother_name;
         $StudentInfo->present_address = $request->present_address;
