@@ -120,7 +120,7 @@
                   <td>{{$student->phone}}</td>
                   <td>{{$student->email}}</td>
                   <td>
-                    <a href="#">cource_id</a>
+                    <a href="{{ route('admin.student-course.show', $student->id) }}">Student Course</a>
                   </td>
                   <td>{{$student->created_at->format('d-m-Y')}}</td>
                   <td>

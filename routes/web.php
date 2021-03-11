@@ -22,13 +22,15 @@ Route::group(['as'=>'admin.', 'prefix'=>'admin', 'namespace'=>'Admin', 'middlewa
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
     Route::get('profile', 'DashboardController@profile')->name('profile');
     Route::resource('student', 'StudentController');
+    Route::resource('course', 'CourseController');
+    Route::resource('batch', 'BatchController');
+    Route::resource('student-course', 'StudentCourseController');
     Route::get('users', 'StudentController@users')->name('users');
     Route::post('certificate', 'StudentController@certificate')->name('certificate');
     Route::get('not-certified', 'StudentController@not_certified')->name('not_certified');
     Route::get('certified', 'StudentController@certified')->name('certified');
     Route::post('payment', 'StudentController@payment')->name('payment');
     Route::post('result', 'StudentController@result')->name('result');
-    Route::resource('batch', 'BatchController');
     Route::resource('slider', 'SliderController');
     Route::resource('staff', 'StaffController');
     Route::resource('event', 'EventController');

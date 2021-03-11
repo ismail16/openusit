@@ -21,7 +21,6 @@ class CreateStudentCoursesTable extends Migration
             $table->integer('fees')->nullable();
             $table->integer('given_amount')->nullable();
             $table->boolean('p_status')->nullable();
-            $table->integer('c_name')->nullable();
             $table->integer('duration')->nullable();
             $table->boolean('is_certified')->default(0);
             $table->string('result')->nullable();

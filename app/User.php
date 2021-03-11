@@ -9,12 +9,17 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
+
     public function role(){
         return $this->belongsTo(Role::class);
     }
-    public function studentinfo(){
-        return $this->belongsTo(StudentInfo::class);
+
+    public function studentinfo()
+    {
+        return $this->hasOne('App\Models\StudentInfo');
     }
+
+
     protected $fillable = [
         'name', 'email', 'password',
     ];

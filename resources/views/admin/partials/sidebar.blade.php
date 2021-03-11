@@ -38,9 +38,23 @@
 
 
                 <li class="nav-item has-treeview ">
+                    <a href="{{route('admin.course.index')}}" class="nav-link {{Request::is('admin/course*') ? 'active':''}}">
+                        <i class="nav-icon fas fa-align-left"></i>
+                        <p>Course</p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview ">
                     <a href="{{route('admin.student.index')}}" class="nav-link {{Request::is('admin/student*') ? 'active':''}}">
                         <i class="nav-icon fas fa-align-left"></i>
                         <p>Student</p>
+                    </a>
+                </li>
+
+                <li class="nav-item has-treeview ">
+                    <a href="{{route('admin.batch.index')}}" class="nav-link {{Request::is('admin/batch*') ? 'active':''}}">
+                        <i class="nav-icon fas fa-align-left"></i>
+                        <p>Batch</p>
                     </a>
                 </li>
 

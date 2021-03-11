@@ -14,10 +14,9 @@ class StudentController extends Controller
     public function index()
     {
         $students = User::where('role_id', 2)->orderBy('id', 'desc')->get();
-        $studentinfos = StudentInfo::orderBy('id','DESC')->get();
         $studentcourses = StudentCourse::orderBy('id','DESC')->get();
 
-        return view('admin.student.all', compact('students','studentinfos','studentcourses'));
+        return view('admin.student.all', compact('students','studentcourses'));
     }
 
     public function create()
