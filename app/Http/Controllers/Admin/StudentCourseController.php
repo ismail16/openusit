@@ -6,26 +6,37 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Models\StudentCourse;
+use App\Models\Batch;
 use App\User;
 
 class StudentCourseController extends Controller
 {
-    public function index()
+    public function student_courses($id)
     {
-        $students = User::where('role_id', 2)->orderBy('id', 'desc')->get();
-        $studentcourses = StudentCourse::orderBy('id','DESC')->get();
-        $courses = Course::orderBy('id', 'desc')->get();
+        // $url = url()->current();
+        // $values = parse_url($url);
+        // $host = explode('.',$values['path']);
+        // $arr = explode('/', $host[0]);
+        $student = User::find($id);
+        $studentcourses = StudentCourse::orderBy('id','DESC')->where('user_id',$student->id )->get();
+        // $course = Course::orderBy('id', 'desc')->where('id',$student->id )->get();
+        // return $studentcourses;
 
-        return view('admin.student_course.index', compact('courses'));
+        return view('admin.student_course.index', compact('student','studentcourses'));
     }
 
-    public function create()
+    public function student_course_create()
     {
-        return view('admin.student_course.create');
+        $id = request()->route('id');
+        $student = User::find($id);
+        $courses = Course::orderBy('id', 'desc')->get();
+        $batchs = Batch::orderBy('id','desc');
+        return view('admin.student_course.create', compact('student','courses','batchs'));
     }
 
     public function store(Request $request)
     {
+
         $this->validate($request, [
           'course_id' => 'required',
         ]);
@@ -63,7 +74,11 @@ class StudentCourseController extends Controller
     public function edit($id)
     {
         $studentcourse = StudentCourse::find($id);
-        return view('admin.student_course.edit', compact('studentcourse'));
+        // $id = request()->route('id');
+        // $student = User::find($id);
+        $courses = Course::orderBy('id', 'desc')->get();
+        $batchs = Batch::orderBy('id','desc')->get();
+        return view('admin.student_course.edit', compact('studentcourse','courses','batchs'));
     }
 
     public function update(Request $request, $id)
@@ -74,6 +89,7 @@ class StudentCourseController extends Controller
         ]);
 
         $studentcourse = StudentCourse::find($id);
+        $studentcourse->user_id = $request->user_id;
         $studentcourse->course_id = $request->course_id;
         $studentcourse->batch_id = $request->batch_id;
         $studentcourse->fees = $request->fees;
@@ -86,7 +102,9 @@ class StudentCourseController extends Controller
 
         try{
             $studentcourse->save();
-            return redirect()->route('admin.student-course.show', $studentcourse->id )->with('success', 'Student Course Update Successfully !');
+            $student = User::find($request->user_id);
+            $studentcourses = StudentCourse::orderBy('id','DESC')->where('user_id',$student->id )->get();
+            return view('admin.student_course.index', compact('student','studentcourses'))->with('success', 'Student Course Update Successfully !');
         }catch (\Exception $exception){
             return back()->with('error', 'Something went wrong !');
         }

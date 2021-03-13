@@ -21,18 +21,27 @@
                 <form method="POST" action="{{route('admin.student-course.update', $studentcourse->id)}}" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
+                    <input type="text" class="d-none" value="{{ $studentcourse->user_id }}" name="user_id">
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Course ID</label>
                                 <div class="">
-                                    <input type="text" name="course_id" value="{{ $studentcourse->course_id }}" class="form-control form-control-sm w-100" placeholder="Course ID">
+                                    <select name="course_id" class="form-control form-control-sm">
+                                        @foreach($courses as $course)
+                                            <option value="{{ $course->id }}" {{ $studentcourse->course_id == $course->id ? 'selected':'' }}>{{ $course->title }}-{{ $course->price }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Batch ID </label>
                                 <div class="">
-                                    <input type="text" name="batch_id" value="{{ $studentcourse->batch_id }}" required class="form-control form-control-sm w-100" placeholder="Batch ID">
+                                    <select name="batch_id" class="form-control form-control-sm">
+                                        @foreach($batchs as $batch)
+                                            <option value="{{ $batch->id }}" {{ $studentcourse->batch_id == $batch->id ? 'selected':'' }}>{{ $batch->name }}{{ $batch->batch_no }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">

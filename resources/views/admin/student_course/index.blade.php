@@ -28,7 +28,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <a href="{{ route('admin.student-course.create') }}" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
+                            <a href="{{ route('admin.student_course_create',$student->id) }}" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
                                 class="fa fa-plus"></i> Add New</a>
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
@@ -53,7 +53,15 @@
                                     <td>{{ $studentcourse->fees }}</td>
                                     <td>{{ $studentcourse->fees }}</td>
                                     <td>{{ $studentcourse->given_amount }}</td>
-                                    <td>{{ $studentcourse->duration }}</td>
+                                    <td>
+                                        @if($studentcourse->is_certified == 0)
+                                            <span class="badge bg-yellow">Not Certified</span>
+                                        @else
+                                            <span class="badge bg-green">
+                                                <a href="{{ route('student_certified', $studentcourse->user_id) }}">Certified</a>
+                                            </span>
+                                        @endif
+                                    </td>
                                     <td>
                                         @if($studentcourse->status == 0)
                                             <span class="badge bg-yellow">Inactive</span>

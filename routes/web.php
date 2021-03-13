@@ -11,6 +11,9 @@ Route::get('/student-apply', 'Frontend\PagesController@student_apply')->name('st
 Route::post('/student-apply-post', 'Frontend\PagesController@student_apply_post')->name('student_apply_post');
 
 
+Route::get('student-certified/{id}', 'Frontend\PagesController@student_certified')->name('student_certified');
+
+
 
 
 Auth::routes();
@@ -24,7 +27,13 @@ Route::group(['as'=>'admin.', 'prefix'=>'admin', 'namespace'=>'Admin', 'middlewa
     Route::resource('student', 'StudentController');
     Route::resource('course', 'CourseController');
     Route::resource('batch', 'BatchController');
+
+    Route::get('students/{id}/courses', 'StudentCourseController@student_courses')->name('student_courses');
+    Route::get('students/{id}/courses/create', 'StudentCourseController@student_course_create')->name('student_course_create');
+
+
     Route::resource('student-course', 'StudentCourseController');
+
     Route::get('users', 'StudentController@users')->name('users');
     Route::post('certificate', 'StudentController@certificate')->name('certificate');
     Route::get('not-certified', 'StudentController@not_certified')->name('not_certified');

@@ -37,19 +37,25 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4 pb-1">
+                            <div class="col-md-6 pb-1">
                                 <label class="control-label mb-0">Total Class</label>
                                 <div class="">
                                     <input type="text" name="class" class="form-control form-control-sm w-100" placeholder="Total Class">
                                 </div>
                             </div>
-                            <div class="col-md-4 pb-1">
+                            <div class="col-md-6 pb-1">
+                                <label class="control-label mb-0">Price</label>
+                                <div class="">
+                                    <input type="text" name="price" class="form-control form-control-sm w-100" placeholder="Total Class">
+                                </div>
+                            </div>
+                            <div class="col-md-6 pb-1">
                                 <label class="control-label mb-0">Duration</label>
                                 <div class="">
                                     <input type="text" name="duration" class="form-control form-control-sm w-100" placeholder="Duration">
                                 </div>
                             </div>
-                            <div class="col-md-4 pb-1">
+                            <div class="col-md-6 pb-1">
                                 <label class="control-label mb-0">Total Hours </label>
                                 <div class="">
                                     <input type="text" name="total_hours" class="form-control form-control-sm w-100" placeholder="Total Hours">

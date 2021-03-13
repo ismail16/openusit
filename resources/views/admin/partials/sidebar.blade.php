@@ -13,7 +13,7 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                 <li class="nav-item has-treeview">
+                <!-- <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                       <i class="nav-icon fa fa-users"></i>
                       <p>
@@ -34,37 +34,32 @@
                             <a href="{{route('admin.users')}}" class="nav-link"><i class="fa fa-circle-o"></i> Users</a>
                         </li>
                     </ul>
-                </li>
-
-
+                </li> -->
                 <li class="nav-item has-treeview ">
                     <a href="{{route('admin.course.index')}}" class="nav-link {{Request::is('admin/course*') ? 'active':''}}">
-                        <i class="nav-icon fas fa-align-left"></i>
+                        <i class="nav-icon fas fa-cubes"></i>
                         <p>Course</p>
                     </a>
                 </li>
-
-                <li class="nav-item has-treeview ">
-                    <a href="{{route('admin.student.index')}}" class="nav-link {{Request::is('admin/student*') ? 'active':''}}">
-                        <i class="nav-icon fas fa-align-left"></i>
-                        <p>Student</p>
-                    </a>
-                </li>
-
+                
                 <li class="nav-item has-treeview ">
                     <a href="{{route('admin.batch.index')}}" class="nav-link {{Request::is('admin/batch*') ? 'active':''}}">
-                        <i class="nav-icon fas fa-align-left"></i>
+                        <i class="nav-icon fas fa-users	"></i>
                         <p>Batch</p>
                     </a>
                 </li>
-
-                <li class="nav-item has-treeview">
+                <li class="nav-item has-treeview ">
+                    <a href="{{route('admin.student.index')}}" class="nav-link {{Request::is('admin/student*') ? 'active':''}}">
+                        <i class="nav-icon fas fa-user-graduate"></i>
+                        <p>Student</p>
+                    </a>
+                </li>
+                <!-- <li class="nav-item has-treeview">
                     <a href="{{route('admin.staff.index')}}" class="nav-link {{Request::is('admin/staff*')?'active':''}}">
                         <i class="nav-icon fa fa-puzzle-piece"></i>
                         <p>Staff</p>
                     </a>
-                </li>
-
+                </li> -->
                 <li class="nav-item has-treeview">
                     <a href="{{route('admin.slider.index')}}" class="nav-link {{Request::is('admin/slider*')?'active':''}}">
                         <i class="nav-icon fa fa-puzzle-piece"></i>

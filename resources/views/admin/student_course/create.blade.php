@@ -23,21 +23,28 @@
                     <div class="card-body pb-0">
                         <div class="row">
                             <div class="col-md-4 pb-1">
-                                <label class="control-label mb-0">User ID</label>
+                                <label class="control-label mb-0">Student</label>
                                 <div class="">
-                                    <input type="text" name="user_id" class="form-control form-control-sm w-100" placeholder="User ID">
+                                    <p class="border p-1">{{ $student->name }}</p>
+                                    <input name="user_id" value="{{ $student->name }}" class="d-none" >
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">
-                                <label class="control-label mb-0">Course ID</label>
+                                <label class="control-label mb-0">Course</label>
                                 <div class="">
-                                    <input type="text" name="course_id" class="form-control form-control-sm w-100" placeholder="Course ID">
+                                    <select name="course_id" class="form-control form-control-sm">
+                                        @foreach($courses as $course)
+                                            <option value="{{ $course->id }}">{{ $course->title }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Batch ID </label>
                                 <div class="">
-                                    <input type="text" name="batch_id" class="form-control form-control-sm w-100" placeholder="Batch ID">
+                                    @foreach($batchs as $batch)
+                                        <option value="{{ $batch->id }}">{{ $batch->batch_no }}.{{ $batch->course_id }}</option>
+                                    @endforeach
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">

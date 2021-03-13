@@ -42,6 +42,7 @@ class CourseController extends Controller
             $course->image = $imagename;
         }
         $course->class = $request->class;
+        $course->price = $request->price;
         $course->duration = $request->duration;
         $course->total_hours = $request->total_hours;
         $course->description = $request->description;
@@ -90,6 +91,7 @@ class CourseController extends Controller
             $course->image = $imagename;
         }
         $course->class = $request->class;
+        $course->price = $request->price;
         $course->duration = $request->duration;
         $course->total_hours = $request->total_hours;
         $course->description = $request->description;

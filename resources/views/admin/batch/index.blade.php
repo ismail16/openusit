@@ -36,6 +36,7 @@
                                     <th>#SL</th>
                                     <th>Course ID</th>
                                     <th>Batch Number</th>
+                                    <th>Batch Name</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>

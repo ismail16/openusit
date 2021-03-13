@@ -19,6 +19,7 @@ class CreateCoursesTable extends Migration
             $table->string('slug')->nullable();
             $table->string('image')->nullable();
             $table->string('class')->nullable();
+            $table->string('price')->nullable();
             $table->string('duration')->nullable();
             $table->string('total_hours')->nullable();
             $table->text('description')->nullable();

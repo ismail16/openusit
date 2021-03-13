@@ -11,7 +11,9 @@ use App\Models\Contact;
 use App\User;
 use App\Models\StudentCourse;
 use App\Models\StudentInfo;
+use App\Models\Course;
 use Illuminate\Support\Facades\Hash;
+
 
 class PagesController extends Controller
 {
@@ -42,6 +44,17 @@ class PagesController extends Controller
     public function student_apply()
     {
         return view('auth.register');
+    }
+
+    public function student_certified($user_id)
+    {
+
+        $student = User::find($user_id);
+        $studentinfo = StudentInfo::orderBy('id','DESC')->where('user_id', $student->id )->first();
+        $studentcourse = StudentCourse::orderBy('id','DESC')->where('user_id',$student->id )->first();
+        $course = Course::orderBy('id','DESC')->where('id',$studentcourse->course_id )->first();
+
+        return view('frontend.pages.certificate',compact('student','studentinfo','studentcourse','course'));
     }
 
     public function student_apply_post(Request $request)
