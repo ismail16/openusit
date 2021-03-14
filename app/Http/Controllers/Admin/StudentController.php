@@ -21,8 +21,8 @@ class StudentController extends Controller
 
     public function create()
     {
-        $users = User::where('role_id', 2)->orderBy('id', 'desc')->get();
-        return view('admin.student.add', compact('users'));
+        // $users = User::where('role_id', 2)->orderBy('id', 'desc')->get();
+        return view('admin.student.create');
     }
 
     public function store(Request $request)

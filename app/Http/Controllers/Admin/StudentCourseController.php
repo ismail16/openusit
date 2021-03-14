@@ -19,8 +19,6 @@ class StudentCourseController extends Controller
         // $arr = explode('/', $host[0]);
         $student = User::find($id);
         $studentcourses = StudentCourse::orderBy('id','DESC')->where('user_id',$student->id )->get();
-        // $course = Course::orderBy('id', 'desc')->where('id',$student->id )->get();
-        // return $studentcourses;
 
         return view('admin.student_course.index', compact('student','studentcourses'));
     }

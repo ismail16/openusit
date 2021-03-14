@@ -122,7 +122,7 @@
                   <td>
                     <a href="{{ route('admin.student_courses', $student->id) }}">Student Course</a>
                   </td>
-                  <td>  {{ date('d m Y', strtotime($student->created_at)) }}</td>
+                  <td>{{ date('d-m-Y', strtotime($student->created_at)) }}</td>
                   <td>
                       <a href="{{route('admin.student.edit', $student->id)}}"
                         class="btn btn-xs btn-success"><i class="fa fa-edit"></i></a>
