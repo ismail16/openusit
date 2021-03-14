@@ -35,19 +35,22 @@
                                 <tr>
                                     <th>#SL</th>
                                     <th>Course ID</th>
-                                    <th>Batch Number</th>
                                     <th>Batch Name</th>
+                                    <th>Batch Number</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    <th class="text-center">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($batchs as $batch)
                                 <tr>
+                                    @php  
+                                        $course = \App\Models\Course::where('id', $batch->course_id)->first(); 
+                                    @endphp
                                     <td>{{ $loop->index+1 }}</td>
-                                    <td>{{ $batch->course_id }}</td>
-                                    <td>{{ $batch->batch_no }}</td>
+                                    <td>{{ $course->title }}</td>
                                     <td>{{ $batch->name }}</td>
+                                    <td>{{ $batch->batch_no }}</td>
                                     <td>
                                         @if($batch->status == 0)
                                             <span class="badge bg-yellow">Inactive</span>
@@ -56,6 +59,9 @@
                                         @endif
                                     </td>
                                     <td class="text-center">
+                                        <a href="{{route('admin.batch.show', $batch->id)}}"
+                                           class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
+
                                         <a href="{{route('admin.batch.edit', $batch->id)}}"
                                            class="btn btn-xs btn-success"><i class="fa fa-edit"></i></a>
 

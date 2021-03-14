@@ -50,12 +50,3 @@ Route::group(['as'=>'student.', 'prefix'=>'student', 'namespace'=>'Student', 'mi
     Route::get('dashboard', 'DashboardController@index')->name('dashboard');
     Route::resource('profile', 'StudentController');
 });
-
-// Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'admin']], function () {
-// 	Route::get('/dashboard', 'PagesController@index')->name('dashboard');
-// 	Route::resource('category', 'CategoryController');
-// 	Route::resource('portfolio', 'PortfolioController');
-// 	Route::resource('team-member', 'TeamMemberController');
-// 	Route::resource('contact', 'ContactController');
-// });
-

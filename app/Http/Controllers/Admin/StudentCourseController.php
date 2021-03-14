@@ -30,20 +30,19 @@ class StudentCourseController extends Controller
         $id = request()->route('id');
         $student = User::find($id);
         $courses = Course::orderBy('id', 'desc')->get();
-        $batchs = Batch::orderBy('id','desc');
+        $batchs = Batch::orderBy('id','desc')->get();
         return view('admin.student_course.create', compact('student','courses','batchs'));
     }
 
     public function store(Request $request)
     {
-
         $this->validate($request, [
-          'course_id' => 'required',
+            'user_id' => 'required',
+            'batch_id' => 'required',
         ]);
 
         $studentcourse = New StudentCourse();
         $studentcourse->user_id = $request->user_id;
-        $studentcourse->course_id = $request->course_id;
         $studentcourse->batch_id = $request->batch_id;
         $studentcourse->fees = $request->fees;
         $studentcourse->given_amount = $request->given_amount;
@@ -85,12 +84,12 @@ class StudentCourseController extends Controller
     {
 
         $this->validate($request, [
-          'course_id' => 'required',
+          'user_id' => 'required',
+          'batch_id' => 'required',
         ]);
 
         $studentcourse = StudentCourse::find($id);
         $studentcourse->user_id = $request->user_id;
-        $studentcourse->course_id = $request->course_id;
         $studentcourse->batch_id = $request->batch_id;
         $studentcourse->fees = $request->fees;
         $studentcourse->given_amount = $request->given_amount;

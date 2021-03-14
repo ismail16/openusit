@@ -34,12 +34,13 @@
                                 <thead>
                                 <tr>
                                     <th>#SL</th>
-                                    <th>Course ID</th>
+                                    <th>Course</th>
                                     <th>Batch ID</th>
                                     <th>Fees</th>
                                     <th>Given Amount</th>
                                     <th>Duration</th>
                                     <th>Is Certified</th>
+                                    <th>Result</th>
                                     <th>Status</th>
                                     <th>Action</th>
                                 </tr>
@@ -47,25 +48,43 @@
                                 <tbody>
                                 @foreach($studentcourses as $studentcourse)
                                 <tr>
+                                    @php 
+                                        $batch = \App\Models\Batch::where('id', $studentcourse->batch_id)->first(); 
+                                        $course = \App\Models\Course::where('id', $batch->course_id)->first(); 
+                                    @endphp
+                                    
                                     <td>{{ $loop->index+1 }}</td>
-                                    <td>{{ $studentcourse->course_id }}</td>
-                                    <td>{{ $studentcourse->batch_id }}</td>
+                                    <td>
+                                        <a href="{{ route('admin.course.show', $course->id) }}">{{ $course->title }}</a>
+                                    </td>
+                                    <td>
+                                        <a href="{{ route('admin.batch.show', $batch->id) }}"> {{ $batch->name }}{{ $batch->batch_no }}</a>
+                                    </td>
                                     <td>{{ $studentcourse->fees }}</td>
                                     <td>{{ $studentcourse->fees }}</td>
                                     <td>{{ $studentcourse->given_amount }}</td>
                                     <td>
-                                        @if($studentcourse->is_certified == 0)
-                                            <span class="badge bg-yellow">Not Certified</span>
-                                        @else
+                                        @if($studentcourse->is_certified == 1)
                                             <span class="badge bg-green">
                                                 <a href="{{ route('student_certified', $studentcourse->user_id) }}">Certified</a>
+                                            </span>
+                                        @else
+                                            <span class="badge bg-yellow">Not Certified</span>
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if($studentcourse->result)
+                                            <span class="badge bg-success">{{ $studentcourse->result }}</span>
+                                        @else
+                                            <span class="badge bg-warnig">
+                                                Pending
                                             </span>
                                         @endif
                                     </td>
                                     <td>
                                         @if($studentcourse->status == 0)
                                             <span class="badge bg-yellow">Inactive</span>
-                                            @else
+                                        @else
                                             <span class="badge bg-green">Actived</span>
                                         @endif
                                     </td>

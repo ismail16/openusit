@@ -62,7 +62,8 @@ class CourseController extends Controller
 
     public function show($id)
     {
-        //
+        $course = Course::find($id);
+        return view('admin.course.show', compact('course'));
     }
 
     public function edit($id)

@@ -29,7 +29,7 @@
                                     <input name="user_id" value="{{ $student->name }}" class="d-none" >
                                 </div>
                             </div>
-                            <div class="col-md-4 pb-1">
+                            <!-- <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Course</label>
                                 <div class="">
                                     <select name="course_id" class="form-control form-control-sm">
@@ -38,13 +38,15 @@
                                         @endforeach
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Batch ID </label>
                                 <div class="">
-                                    @foreach($batchs as $batch)
-                                        <option value="{{ $batch->id }}">{{ $batch->batch_no }}.{{ $batch->course_id }}</option>
-                                    @endforeach
+                                    <select name="batch_id" class="form-control form-control-sm">
+                                        @foreach($batchs as $batch)
+                                            <option value="{{ $batch->id }}">{{ $batch->name }}{{ $batch->batch_no }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">

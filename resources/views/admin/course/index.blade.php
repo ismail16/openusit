@@ -56,6 +56,9 @@
                                         @endif
                                     </td>
                                     <td class="text-center">
+
+                                        <a href="{{route('admin.course.show', $course->id)}}"
+                                           class="btn btn-xs btn-success"><i class="fa fa-eye"></i></a>
                                         <a href="{{route('admin.course.edit', $course->id)}}"
                                            class="btn btn-xs btn-success"><i class="fa fa-edit"></i></a>
 
