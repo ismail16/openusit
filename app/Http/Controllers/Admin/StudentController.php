@@ -57,7 +57,9 @@ class StudentController extends Controller
 
     public function edit($id)
     {
-
+        $student = User::find($id);
+        $studentinfo = StudentInfo::where('user_id', $student->id)->first();
+        return view('admin.student.edit', compact('student','studentinfo'));
     }
 
     public function update(Request $request, $id)

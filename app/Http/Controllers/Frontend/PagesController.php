@@ -51,6 +51,9 @@ class PagesController extends Controller
 
         $student = User::find($user_id);
         $studentinfo = StudentInfo::orderBy('id','DESC')->where('user_id', $student->id )->first();
+
+        return $studentinfo;
+        
         $studentcourse = StudentCourse::orderBy('id','DESC')->where('user_id',$student->id )->first();
         $course = Course::orderBy('id','DESC')->where('id',$studentcourse->course_id )->first();
 

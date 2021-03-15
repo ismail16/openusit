@@ -26,19 +26,9 @@
                                 <label class="control-label mb-0">Student</label>
                                 <div class="">
                                     <p class="border p-1">{{ $student->name }}</p>
-                                    <input name="user_id" value="{{ $student->name }}" class="d-none" >
+                                    <input name="user_id" value="{{ $student->id }}" class="d-none" >
                                 </div>
                             </div>
-                            <!-- <div class="col-md-4 pb-1">
-                                <label class="control-label mb-0">Course</label>
-                                <div class="">
-                                    <select name="course_id" class="form-control form-control-sm">
-                                        @foreach($courses as $course)
-                                            <option value="{{ $course->id }}">{{ $course->title }}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                            </div> -->
                             <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Batch ID </label>
                                 <div class="">
@@ -67,6 +57,7 @@
                                 <div class="">
                                     <select name="p_status" class="form-control form-control-sm">
                                         <option value="0">Unpaid</option>
+                                        <option value="2">Due</option>
                                         <option value="1">Paid</option>
                                     </select>
                                 </div>
@@ -89,7 +80,7 @@
                             <div class="col-md-4 pb-1">
                                 <label class="control-label mb-0">Result</label>
                                 <div class="">
-                                    <input type="text" name="result" class="form-control form-control-sm w-100" placeholder="Result">
+                                    <input type="number" name="result" class="form-control form-control-sm w-100" placeholder="Result">
                                 </div>
                             </div>
                             <div class="col-md-4 pb-1">

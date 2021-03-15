@@ -34,6 +34,10 @@ class StudentCourseController extends Controller
 
     public function store(Request $request)
     {
+
+        // return $request;
+
+
         $this->validate($request, [
             'user_id' => 'required',
             'batch_id' => 'required',
@@ -52,7 +56,7 @@ class StudentCourseController extends Controller
 
         try{
             $studentcourse->save();
-            return redirect()->route('admin.student-course.show', $studentcourse->id )->with('success', 'Student Course Create Successfully !');
+            return redirect()->route('admin.student_courses', $studentcourse->user_id )->with('success', 'Student Course Create Successfully !');
         }catch (\Exception $exception){
             return back()->with('error', 'Something went wrong !');
         }

@@ -5,8 +5,7 @@
         <div class="row">
             <div class="col-lg-3 col-sm-12 col-md-6">
                 <div class="footer-logo text-center">
-                    <h1>Openus IT Institute</h1>
-                    <!-- <img src="{{ asset('images/logo.png') }}" class="img-fluid" alt="footer-logo"> -->
+                    <img src="{{ asset('images/logo.png') }}" class="img-fluid" alt="footer-logo">
                     <h4>CHANGE I GROW I SUCCEED</h4>
                     <div class="social">
                         <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>

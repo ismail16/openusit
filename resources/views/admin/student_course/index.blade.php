@@ -28,7 +28,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="table-responsive">
-                            <a href="{{ route('admin.student_course_create',$student->id) }}" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
+                            <a href="{{ route('admin.student_course_create', $student->id) }}" class="pull-right btn btn-sm btn-primary float-right ml-2"> <i
                                 class="fa fa-plus"></i> Add New</a>
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>

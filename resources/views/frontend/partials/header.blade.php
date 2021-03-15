@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Oppenus IT Training Institute in Bangladesh - Oppenus IT</title>
     <meta name="description" content="Develop your professional &amp; personal skills through Oppenus IT Institute. We provide Graphic Design, Web &amp; Software, Digital Marketing Training etc affordable price. Call +8801644966937">
-    <link rel="icon" type="img/icon" href="https://www.openusit.com/images/icon.png">
+    <link rel="icon" type="img/icon" href="{{ asset('images/icon.png') }}">
     <link rel="canonical" href="https://www.openusit.com" />
     <!-- ========= All CSS Links Here ========== -->
     
