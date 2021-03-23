@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print this page</button>
+
+</body>
+</html>
+
+
+
+
 <html>
     <head>
         <style type='text/css'>
@@ -48,7 +64,7 @@
         </style>
     </head>
     <body  class="content">
-        <div class="container">
+        <div class="container" style="background-image: url('../images/certificate.png')">
             <div class="logo">
                 Openus IT Institute
             </div>
