@@ -1,92 +1,192 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>The window.print() Method</h2>
-
-<p>Click the button to print the current page.</p>
-
-<button onclick="window.print()">Print this page</button>
-
-</body>
-</html>
-
-
-
-
 <html>
     <head>
         <style type='text/css'>
-            body, html {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                color: black;
-                display: table;
-                font-family: Georgia, serif;
-                font-size: 24px;
-                text-align: center;
-            }
-            .container {
-                border: 20px solid tan;
-                width: 750px;
-                height: 563px;
-                display: table-cell;
-                vertical-align: middle;
-            }
-            .logo {
-                color: tan;
-            }
-
-            .marquee {
-                color: tan;
-                font-size: 48px;
-                margin: 20px;
-            }
-            .assignment {
-                margin: 20px;
-            }
-            .person {
-                border-bottom: 2px solid black;
-                font-size: 32px;
-                font-style: italic;
-                margin: 20px auto;
-                width: 400px;
-            }
-            .reason {
-                margin: 20px;
-            }
-            .content {
-                /* max-width: 500px; */
-                margin: auto;
-                }
+            .serif{
+font-family: serif;
+}
+.texto {
+margin: 0;
+}
+.negrito {
+font-weight: 700
+}
+.negrito-2 {
+font-weight: 600
+}
+.sublinhar{
+text-decoration: underline;
+}
+.center {
+text-align: center
+}
+.esquerda {
+text-align: right;
+}
+.overline {
+text-decoration: overline;
+}
+.quebra_linha{
+display: block;
+}
+/*configurações de fonts*/
+.font-17 {
+font-size: 17px;
+}
+.font-24 {
+font-size: 24px;
+}
+.font-36 {
+font-size: 36px;
+}
+.font-40 {
+font-size: 40px;
+}
+/*confifurações de margin*/
+.padding_top_35{
+padding-top:35px;
+}
+.margin_bottom_35{
+margin-bottom: 35px;
+}
+.altura_linhas_19{
+line-height: 19px;
+}
+.altura_linhas_35{
+line-height: 35px;
+}
+.altura_linhas_25{
+line-height: 25px;
+}
+.caixa_informacoes_aluno_cea{
+font-size: 22px;
+text-align: justify;
+padding-right: 46px;
+}
+.caixa_informacoes_aluno_cea_2{
+font-size: 22px;
+text-align: justify;
+padding-right: 46px;
+padding-left: 46px;
+}
+.caixa_informacoes_aluno_cea p{
+margin-top: 5px;
+}
+.assinatura_cea{
+line-height: 22px;
+font-size: 22px;
+padding-top: 22px;
+}
+.titulo_cea_2{
+margin-top: 35px;
+margin-bottom: 35px
+}
+.data_entrega_cea{
+padding-top: 25px;
+padding-bottom: 43px;
+}
+/*configurações de exibição da pagina e conteudo*/
+.certificado_conteudo {
+-webkit-print-color-adjust: exact;
+background-image: url('../images/certificate.jpg');
+height: 755px;
+width: 1085px;
+background-repeat: no-repeat
+}
+.certificado_pagina {
+padding: 5mm;
+width: 1085px;
+margin: 30px auto;
+box-shadow: .5px .5px 7px #000;
+border-radius: 2px;
+overflow: hidden;
+}
+/*area de configuraçõa da pagina*/
+@page {
+size: 297mm 210mm;
+margin: 5mm;
+size: landscape
+}
+body {
+margin: 0;
+padding: 0px !important;
+font-family: 'Open Sans', sans-serif
+}
+p{
+margin: 0px;
+}
+/*SEMPRE DEIXAR NO FIM DO CODIGO configuração de impresão*/
+@media print {
+.certificado_pagina {
+padding: 0;
+background: transparent;
+margin: 0;
+border-radius: 0;
+box-shadow: none;
+-webkit-box-shadow: none
+}
+}
         </style>
     </head>
     <body  class="content">
-        <div class="container" style="background-image: url('../images/certificate.png')">
-            <div class="logo">
-                Openus IT Institute
+    <div>
+    <div class="certificado_pagina">
+        <div class="certificado_conteudo">
+            <div class="row end-xs">
+                <div class="col-xs-10">
+                    <div class="box">
+                        <p class="_padding_top_35 center" style="padding-top: 125px;">
+                            <span class="font-40 negrito  quebra_linha serif"> Openus IT Institute </span>
+                        </p>
+                        <!-- <p class="center altura_linhas_19">
+                            <span class="font-17 quebra_linha">MACAPÁ-AP – BRASIL</span>
+                            <span class="font-17 quebra_linha">ENTIDADE MANTENEDORA: F.L. BITENCOURT</span>
+                            <span class="font-17 quebra_linha">ATO DE RECONHECIMENTO nº 00/2000 – CXX- AP</span>
+                        </p> -->
+                    </div>
+                    <div class="box">
+                        <p class="_padding_top_35 _margin_bottom_35 center" style="margin-top: 50px;">
+                            <span class="font-36 negrito-2  quebra_linha">Certificate of Completion</span>
+                        </p>
+                        <div class="caixa_informacoes_aluno_cea serif padding_top_35" style="margin: 30px 45px 30px 90px;">
+                            <p>
+                            This is  to certify that, <b>{{ $student->name }}</b>  has completed  <b>{{ $course->title }}</b>  Training,  
+                            In  the  month    of <b>{{ $course->created_at->format('d M Y') }}</b> conducted, Employment and Governance (LICT) Project of
+                            Bangladesh Computer Council (BCC), ICT Division, People's Republic of Bangladesh on Under <b>Openus IT Institute</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="marquee">
-                Certificate of Completion
+           
+            <table style="margin: 100px 0px 0px 0px; width: 100%;">
+                <tr>
+                    <td>
+                        <div class="box">
+                            <div class="assinatura_cea serif">
+                                <p class="negrito center">____________________________</p>
+                                <p class="negrito center">Director</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="box">
+                            <div class="assinatura_cea serif">
+                                <p class="negrito center">____________________________</p>
+                                <p class="negrito center">Exam Comtroller</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div style="text-align: center; margin: 40px;">
+                <p class=""> www.openusit.com</p>
+                <p class=""> Certificate No: </p>
             </div>
-
-            <div class="assignment">
-            This is  to certify that, <b>{{ $student->name }}</b>  has completed  <b>{{ $course->title }}</b>  Training,  
-            In  the  month    of <b>{{ $course->created_at->format('d M Y') }}</b> conducted, Employment and Governance (LICT) Project of
-             Bangladesh Computer Council (BCC), ICT Division, People's Republic of Bangladesh on Under <br><br> <b>Openus IT Institute</b>.
-            </div>
-
-            <div class="person">
-               
-            </div>
-
-            <div class="reason">
-                www.openusit.com
             </div>
         </div>
+    </div>
+
+</div>
         <div class="">
             <button onclick="window.print()">Print</button>
         </div>
