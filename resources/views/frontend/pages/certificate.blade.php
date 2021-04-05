@@ -133,10 +133,19 @@ box-shadow: none;
         <div class="certificado_conteudo">
             <div class="row end-xs">
                 <div class="col-xs-10">
-                    <div class="box">
-                        <p class="_padding_top_35 center" style="padding-top: 125px;">
-                            <span class="font-40 negrito  quebra_linha serif"> Openus IT Institute </span>
+                    <div class="" style="padding: 90px 90px 20px 90px; " >
+                        <img src="{{ asset('images/logo.png') }}" alt="">
+                        <p style="text-align:right ">Issued : <b>{{ $course->created_at->format('d/m/Y') }}</b></p>
+                    </div>
+                
+                    <div class="box text-center">
+                    
+                        <p class="_padding_top_35 center" style="_padding-top: 125px;">
+                        
+                            <span class="font-40 negrito  quebra_linha serif"> Openus IT Institute </span> 
+                            
                         </p>
+                        
                         <!-- <p class="center altura_linhas_19">
                             <span class="font-17 quebra_linha">MACAPÁ-AP – BRASIL</span>
                             <span class="font-17 quebra_linha">ENTIDADE MANTENEDORA: F.L. BITENCOURT</span>
@@ -145,24 +154,24 @@ box-shadow: none;
                     </div>
                     <div class="box">
                         <p class="_padding_top_35 _margin_bottom_35 center" style="margin-top: 50px;">
-                            <span class="font-36 negrito-2  quebra_linha">Certificate of Completion</span>
+                            <span class="_font-36 negrito-2  quebra_linha" style="font-size:25px;">Certificate of Completion</span>
                         </p>
                         <div class="caixa_informacoes_aluno_cea serif padding_top_35" style="margin: 30px 45px 30px 90px;">
                             <p>
-                            This is  to certify that, <b>{{ $student->name }}</b>  has completed  <b>{{ $course->title }}</b>  Training,  
-                            In  the  month    of <b>{{ $course->created_at->format('d M Y') }}</b> conducted, Employment and Governance (LICT) Project of
-                            Bangladesh Computer Council (BCC), ICT Division, People's Republic of Bangladesh on Under <b>Openus IT Institute</b>
+                            This is  to certify that, <b>{{ $student->name }}</b>  has successfully completed <b>{{ $studentcourse->duration }}</b> Month <b>{{ $course->title }}</b>   Training,  
+                            In  the  month    of <b>{{ $course->created_at->format('d M Y') }}</b> conducted Under <b>Openus IT Institute</b>. He/She secured Grade <b>{{ $studentcourse->result }}</b> Out of <b>5.00</b>.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
            
-            <table style="margin: 100px 0px 0px 0px; width: 100%;">
+            <table style="margin: 50px 0px 0px 0px; width: 100%;">
                 <tr>
                     <td>
                         <div class="box">
-                            <div class="assinatura_cea serif">
+                            <div class="assinatura_cea serif center">
+                                <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Signature_of_Taufiq_Ismail.svg/1280px-Signature_of_Taufiq_Ismail.svg.png" alt="" style="height:35px;">
                                 <p class="negrito center">____________________________</p>
                                 <p class="negrito center">Director</p>
                             </div>
@@ -170,17 +179,19 @@ box-shadow: none;
                     </td>
                     <td>
                         <div class="box">
-                            <div class="assinatura_cea serif">
+                            <div class="assinatura_cea serif center">
+                                <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ismail_Kadare_%28n%C3%ABnshkrim%29.svg/800px-Ismail_Kadare_%28n%C3%ABnshkrim%29.svg.png" alt="" style="height:35px;">
                                 <p class="negrito center">____________________________</p>
-                                <p class="negrito center">Exam Comtroller</p>
+                                <p class="negrito center">Co-ordinator</p>
                             </div>
                         </div>
                     </td>
                 </tr>
             </table>
-            <div style="text-align: center; margin: 40px;">
-                <p class=""> www.openusit.com</p>
-                <p class=""> Certificate No: </p>
+            <div style="text-align: center;">
+                <h3> www.openusit.com</h3>
+                <p class=""> Certificate Verification Link: </p>
+                <p> <b>{{ route('student_certified', $student->id ) }}</b></p>
             </div>
             </div>
         </div>
